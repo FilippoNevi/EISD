@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/root_AT4.dir/src/root_AT4.cc.o CMakeFiles/root_AT4.dir/src/root_AT4_testbench.cc.o CMakeFiles/root_AT4.dir/src/main_root_AT4.cc.o -o root_AT4  /home/filippo/pse_libraries/systemc/lib/libsystemc.a -pthread 

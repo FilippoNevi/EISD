@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/root_UT.dir/src/root_UT.cc.o CMakeFiles/root_UT.dir/src/root_UT_testbench.cc.o CMakeFiles/root_UT.dir/src/main_root_UT.cc.o -o root_UT  /home/filippo/pse_libraries/systemc/lib/libsystemc.a -pthread 

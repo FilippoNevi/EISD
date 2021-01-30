@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fmiModelDescription
+fmiVersion="2.0"
+modelName="multiplicator_system"
+guid="{multiplicator-a5cf1fbd-89ca-495b-b5ff-ec53a96c6173}"
+description="Multiplicator system implemented within an FMU"
+generationTool="Manual"
+generationDateAndTime="None"
+variableNamingConvention="structured"
+numberOfEventIndicators="0">
+
+<CoSimulation modelIdentifier="multiplicator_system" canHandleVariableCommunicationStepSize="false" />
+<LogCategories>
+    <Category name="logEvents" />
+    <Category name="logSingularLinearSystems" />
+    <Category name="logNonlinearSystems" />
+    <Category name="logDynamicStateSelection" />
+    <Category name="logStatusWarning" />
+    <Category name="logStatusDiscard" />
+    <Category name="logStatusError" />
+    <Category name="logStatusFatal" />
+    <Category name="logStatusPending" />
+    <Category name="logAll" />
+    <Category name="logFmi2Call" />
+</LogCategories>
+<ModelVariables>
+
+<!-- ....... -->
+
+</ModelVariables>
+<ModelStructure>
+</ModelStructure>
+</fmiModelDescription>

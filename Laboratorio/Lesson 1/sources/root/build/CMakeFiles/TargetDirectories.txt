@@ -1,0 +1,3 @@
+/run/media/filippo/AUKEY/Università/Embedded & IoT Systems Design/Laboratorio/Lesson 1/sources/root/build/CMakeFiles/rebuild_cache.dir
+/run/media/filippo/AUKEY/Università/Embedded & IoT Systems Design/Laboratorio/Lesson 1/sources/root/build/CMakeFiles/edit_cache.dir
+/run/media/filippo/AUKEY/Università/Embedded & IoT Systems Design/Laboratorio/Lesson 1/sources/root/build/CMakeFiles/root_RTL.dir

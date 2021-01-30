@@ -1,0 +1,4 @@
+../libwrk/sim6502/isxdigit.o:	common/isxdigit.s /home/centomo/repo/cc65/asminc/ctype.inc
+
+common/isxdigit.s /home/centomo/repo/cc65/asminc/ctype.inc:
+

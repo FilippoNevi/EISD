@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/root_RTL.dir/src/root_RTL.cc.o CMakeFiles/root_RTL.dir/src/root_RTL_testbench.cc.o CMakeFiles/root_RTL.dir/src/main_root_RTL.cc.o -o root_RTL  -Wl,-rpath,/home/filippo/pse_libraries/systemc/lib /home/filippo/pse_libraries/systemc/lib/libsystemc.so.2.3.3 -pthread 

@@ -1,0 +1,4 @@
+../libwrk/atarixl/joy/atrmj8.o:	atari/joy/atrmj8.s /home/centomo/repo/cc65/asminc/zeropage.inc /home/centomo/repo/cc65/asminc/joy-kernel.inc /home/centomo/repo/cc65/asminc/joy-error.inc /home/centomo/repo/cc65/asminc/atari.inc /home/centomo/repo/cc65/asminc/atari_gtia.inc /home/centomo/repo/cc65/asminc/atari_pokey.inc /home/centomo/repo/cc65/asminc/atari_antic.inc /home/centomo/repo/cc65/asminc/generic.mac /home/centomo/repo/cc65/asminc/module.mac
+
+atari/joy/atrmj8.s /home/centomo/repo/cc65/asminc/zeropage.inc /home/centomo/repo/cc65/asminc/joy-kernel.inc /home/centomo/repo/cc65/asminc/joy-error.inc /home/centomo/repo/cc65/asminc/atari.inc /home/centomo/repo/cc65/asminc/atari_gtia.inc /home/centomo/repo/cc65/asminc/atari_pokey.inc /home/centomo/repo/cc65/asminc/atari_antic.inc /home/centomo/repo/cc65/asminc/generic.mac /home/centomo/repo/cc65/asminc/module.mac:
+

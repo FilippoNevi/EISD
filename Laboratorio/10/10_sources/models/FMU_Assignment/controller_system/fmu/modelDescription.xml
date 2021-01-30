@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fmiModelDescription
+fmiVersion="2.0"
+modelName="controller_system"
+guid="{controller-a5cf1fbd-89ca-495b-b5ff-ec53a96c6173}"
+description="Controller for the Water Tank system implemented within an FMU"
+generationTool="Manual"
+generationDateAndTime="None"
+variableNamingConvention="structured"
+numberOfEventIndicators="0">
+
+<CoSimulation modelIdentifier="controller_system" canHandleVariableCommunicationStepSize="false" />
+<LogCategories>
+    <Category name="logEvents" />
+    <Category name="logSingularLinearSystems" />
+    <Category name="logNonlinearSystems" />
+    <Category name="logDynamicStateSelection" />
+    <Category name="logStatusWarning" />
+    <Category name="logStatusDiscard" />
+    <Category name="logStatusError" />
+    <Category name="logStatusFatal" />
+    <Category name="logStatusPending" />
+    <Category name="logAll" />
+    <Category name="logFmi2Call" />
+</LogCategories>
+<ModelVariables>
+	<ScalarVariable name="HIGH" valueReference="0" description="bool" causality="input" variability="discrete" initial="approx">
+	<Boolean  start ="false" />
+	</ScalarVariable>
+	<ScalarVariable name="LOW" valueReference="1" description="bool" causality="input" variability="discrete" initial="approx">
+	<Boolean  start ="false" />
+	</ScalarVariable>
+	<ScalarVariable name="OPEN" valueReference="2" description="bool" causality="output" variability="discrete" initial="approx">
+	<Boolean  start ="false" />
+	</ScalarVariable>
+	<ScalarVariable name="CLOSE" valueReference="3" description="bool" causality="output" variability="discrete" initial="approx">
+	<Boolean  start ="false" />
+	</ScalarVariable>
+  <ScalarVariable name="reset" valueReference="4" description="bool" causality="output" variability="discrete" initial="approx">
+  <Boolean  start ="false" />
+  </ScalarVariable>
+  <!-- Add other bool variables here -->
+
+  </ScalarVariable>
+	<ScalarVariable name="threshold" valueReference="0" description="double" causality="output" variability="discrete" initial="approx">
+	<Real  start ="0.0" />
+	</ScalarVariable>
+  <!-- Add other integer variables here -->
+
+  </ScalarVariable>
+</ModelVariables>
+<ModelStructure>
+</ModelStructure>
+</fmiModelDescription>

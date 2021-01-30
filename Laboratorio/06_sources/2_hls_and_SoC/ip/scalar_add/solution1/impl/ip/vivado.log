@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Nov 23 17:06:10 2020
+# Process ID: 10732
+# Current directory: E:/University/EISD/06_sources/2_hls_and_SoC/ip/scalar_add/solution1/impl/ip
+# Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file: E:/University/EISD/06_sources/2_hls_and_SoC/ip/scalar_add/solution1/impl/ip/vivado.log
+# Journal file: E:/University/EISD/06_sources/2_hls_and_SoC/ip/scalar_add/solution1/impl/ip\vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 23 17:06:16 2020...
