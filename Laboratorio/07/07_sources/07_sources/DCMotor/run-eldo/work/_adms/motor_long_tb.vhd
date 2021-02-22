@@ -1,0 +1,9 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+LIBRARY STD;
+USE STD.ALL;
+
+ENTITY motor_long_tb IS
+END ENTITY motor_long_tb;
+

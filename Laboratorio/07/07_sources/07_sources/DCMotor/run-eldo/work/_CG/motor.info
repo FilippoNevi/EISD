@@ -1,0 +1,15 @@
+[VERILOG-AMS Module]
+NAME = motor 
+SOURCE = /home/user/Dropbox/PhD/models/verilogams_motor_adaptation/components/motor.vams 
+LINE = 22
+[Generics]
+( km   real   4.500000e+00 ) 
+( kf   real   6.200000e+00 ) 
+( j   real   1.200000e+00 ) 
+( d   real   1.000000e-01 ) 
+( r   real   5.000000e+00 ) 
+( l   real   2.000000e-02 ) 
+[Ports]
+(PORT TERMINAL shaft INOUT rotational_omega)
+(PORT TERMINAL p INOUT electrical)
+(PORT TERMINAL n INOUT electrical)

@@ -1,0 +1,75 @@
+`include "disciplines.vams"
+`timescale 1us / 1us
+
+// A motor test circuit
+
+module motor_long_tb;
+
+    reg clk;
+    reg [9:0] voltage_in;
+    reg [9:0] currentState;
+
+    real simTime;
+
+    //electrical gnd, drive;
+    ground gnd;
+
+    initial begin
+        clk <= 0;
+        voltage_in <= 0;
+        currentState <= 0;
+        //#5 $finish; // force end of simulation
+    end
+
+    always @(currentState) begin
+        //if (currentState == 1) begin
+        //    $finish;
+        //end
+
+        // When state changes set the voltage of voltage source
+        if (currentState == 0) begin // TODO not pass
+	        voltage_in <= 0;
+            $display("state 0");
+        end
+        if (currentState == 1) begin
+	        voltage_in <= 0;
+            $display("state 1");
+        end
+        if (currentState == 2) begin
+	        voltage_in <= 3;
+            $display("state 2");
+        end
+        if (currentState == 1000) begin
+	        voltage_in <= 0; // 0
+            $display("state 1000");
+        end
+    end
+
+    always @(posedge clk) begin
+        if (currentState <= 1000) begin
+            currentState <= currentState + 1;
+        end
+        else begin
+            currentState <= currentState;
+        end
+    end
+
+    always begin
+       #500 clk = ~clk; // 1 khz (1/(0.0005*2))
+    end
+
+    // ------------------------------------------------------------------------
+    // ANALOG BEHAVIOUR
+    // ------------------------------------------------------------------------
+    analog begin
+        // Resistor connected to gnd to improve convergence of the simulator
+        //V(load, gnd) <+ I(load, gnd) * 1e09;
+
+        simTime = $abstime;
+        $display("simTime: %f",simTime);
+    end
+
+    vsrc  V1 (drive, gnd, voltage_in);
+    motor M1 (shaft_pos, drive, gnd);
+endmodule
+

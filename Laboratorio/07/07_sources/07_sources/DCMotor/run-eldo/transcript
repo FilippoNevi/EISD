@@ -1,0 +1,101 @@
+vasim -cmd module.cir
+# ** Note: (vasim-3800) Running Questa ADMS 17.1 patch1 Fri Apr  7 09:46:03 GMT 2017
+# +   on ed5cb34b22e1 Linux x86_64(4.15.0-121-generic) #123-Ubuntu SMP Mon Oct 5 16:16:40 UTC 2020
+# ELDO 17.1 patch1 (64 bits) Thu Apr  6 15:28:32 GMT 2017
+# EZwave 17.1 patch1 Thu Apr  6 07:07:02 GMT 2017
+# System Information:
+# *** User  : unknown
+# *** OS    : \S [VCO = aol]
+# *** CPU   :
+#     Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz
+#     Number of physical processors     : 1
+#     Hyper-Threading Technology        : disabled
+#     Number of cpu cores               : 4
+#     Number of logical processors      : 4
+# *** Freq  : 3300.000MHz
+# *** Cache : 6144 KB
+# *** MEM   : 32826036 kB
+# *** Date  : Thu Nov  5 09:44:14 2020
+# Copyright 2000 Mentor Graphics Corporation
+# All Rights Reserved
+# THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY
+# INFORMATION WHICH ARE THE PROPERTY OF MENTOR
+# GRAPHICS CORPORATION OR ITS LICENSORS AND IS
+# SUBJECT TO LICENSE TERMS.
+#  ---------------
+# | Load starting |
+#  ---------------
+# Loading "/opt/mentor/questasim/libs/std.standard"
+# ModelSim for Questa-64 Version 10.6_1 2017.01
+#
+# Reading pref.tcl
+# Loading "/opt/mentor/questasim/libs/ieee.math_real"
+# Loading "/opt/mentor/questasim/libs/ieee.fundamental_constants"
+# Loading "/opt/mentor/questasim/libs/ieee.electrical_systems"
+# Loading "/opt/mentor/questasim/libs/ieee.std_logic_1164"
+# Loading "/opt/mentor/questasim/libs/MGC_AMS.wreal_pkg"
+# Loading "/opt/mentor/questasim/libs/ieee.numeric_bit"
+# Loading "/opt/mentor/questasim/libs/ieee.upf"
+# Loading "/home/user/Dropbox/PhD/models/verilogams_motor_adaptation/run-eldo/work.motor_long_tb"
+# Loading "/home/user/Dropbox/PhD/models/verilogams_motor_adaptation/run-eldo/work.vsrc"
+# Loading "/home/user/Dropbox/PhD/models/verilogams_motor_adaptation/run-eldo/work.motor"
+# Start time: 09:44:14 on Nov 05,2020
+# Start time: 09:44:14 on Nov 05,2020
+# Loading /home/user/Dropbox/PhD/models/verilogams_motor_adaptation/run-eldo/work.vloga_dig_submod_motor_long_tb
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading /opt/mentor/questasim/libs/MS/OS/aol/libVLA2D_64.so
+# End time: 09:44:22 on Nov 05,2020, Elapsed time: 0:00:08
+# Errors: 0, Warnings: 0
+#  ----------------------------
+# | Analog Data pre-processing |
+#  ----------------------------
+# Analog data pre-processing done
+# -----------| Summary on Analog Data |-----------
+# Analog kernel and ELDO devices peak memory usage (MB): 68
+# Analog kernel and ELDO devices virtual memory usage (MB): 588
+# 3 devices
+# 3 nodes
+# 0 input signals
+# ** Note: Extra devices and nodes might be created during simulation (access resistors, internal nodes...).
+# ** Note: Extra Memory might be allocated during simulation.
+# ----------- Summary done -----------
+#     Parsing  cpu Time 0h 0mn 0s 150ms 
+# Load done
+restore test
+#    Global cpu Time 0h 0mn 0s 170ms 
+#    Global Elapsed Time 0h 0mn 22s 
+# ** Note: (vasim-3800) Running Questa ADMS 17.1 patch1 Fri Apr  7 09:46:03 GMT 2017
+# +   on ed5cb34b22e1 Linux x86_64(4.15.0-121-generic) #123-Ubuntu SMP Mon Oct 5 16:16:40 UTC 2020
+# ELDO 17.1 patch1 (64 bits) Thu Apr  6 15:28:32 GMT 2017
+# EZwave 17.1 patch1 Thu Apr  6 07:07:02 GMT 2017
+# System Information:
+# *** User  : unknown
+# *** OS    : \S [VCO = aol]
+# *** CPU   :
+#     Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz
+#     Number of physical processors     : 1
+#     Hyper-Threading Technology        : disabled
+#     Number of cpu cores               : 4
+#     Number of logical processors      : 4
+# *** Freq  : 3299.999MHz
+# *** Cache : 6144 KB
+# *** MEM   : 32826036 kB
+# *** Date  : Thu Nov  5 09:44:36 2020
+# Copyright 2000 Mentor Graphics Corporation
+# All Rights Reserved
+# THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY
+# INFORMATION WHICH ARE THE PROPERTY OF MENTOR
+# GRAPHICS CORPORATION OR ITS LICENSORS AND IS
+# SUBJECT TO LICENSE TERMS.
+#  ---------------
+# | Load starting |
+#  ---------------
+# Loading "/opt/mentor/questasim/libs/std.standard"
+# ModelSim for Questa-64 Version 10.6_1 2017.01
+#
+# Reading pref.tcl
+# ** Fatal: (SIGSEGV) Bad pointer access. Closing vsimk.
+# ** Fatal: Read failure in vlm process (0,0)
+# ** Error: Loading design failed

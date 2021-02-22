@@ -1,0 +1,82 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/user/Dropbox/PhD/models/verilogams_motor_adaptation/run-eldo
+:motor
+!s20a 1
+!s209 5
+!s208 Z[72:]D0l9D2IaD2lG10T4
+VZ[72:]D0l9D2IaD2lG10T4
+!s207 28
+Z1 !s206 1604569066
+w1589214337
+Z2 !s205  +ogr  -k 2005 
+!s204 1
+!s203 4599
+!s202 233
+nmotor
+F../components/motor.vams
+R0
+!s201 8
+Z3 !s8d adms
+:motor_long_tb
+!s20a 0
+!s209 6
+!s208 nE90Mi71cS61hLD1RdB1@5
+VnE90Mi71cS61hLD1RdB1@5
+!s207 30
+R1
+w1589214023
+R2
+!s204 1
+!s203 4149
+!s202 216
+nmotor_long_tb
+Z4 F../testbenches/motor_long_tb.vams
+R0
+!s201 8
+R3
+vvloga_dig_submod_motor_long_tb
+!s110 1604569067
+!i10b 1
+!s100 hdVVVZ6fTl;15IW?^XclH1
+IQc`PZ5FQ1Yj>>PCgZN63D2
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1604569067
+8../testbenches/motor_long_tb.vams
+R4
+L0 4
+OL;L;10.6_1;65
+r1
+!s85 0
+31
+!s108 1604569067.000000
+!s107 /home/user/Dropbox/PhD/models/verilogams_motor_adaptation/run-eldo/work/_CG/vloga_dig_submod_motor_long_tb.v|
+!s90 -work|/home/user/Dropbox/PhD/models/verilogams_motor_adaptation/run-eldo/work|-adms_unitsinfo|/tmp/valog1j9h3M|-quiet|-stats=none|/home/user/Dropbox/PhD/models/verilogams_motor_adaptation/run-eldo/work/_CG/vloga_dig_submod_motor_long_tb.v|
+!i113 1
+o-quiet -work /home/user/Dropbox/PhD/models/verilogams_motor_adaptation/run-eldo/work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+tCvgOpt 0
+:vsrc
+!s20a 0
+!s209 6
+!s208 LgB0YNF1UDE2OI503]01;6
+VLgB0YNF1UDE2OI503]01;6
+!s207 29
+R1
+w1588168464
+R2
+!s204 1
+!s203 4472
+!s202 229
+nvsrc
+F../components/vsrc.vams
+R0
+!s201 8
+R3

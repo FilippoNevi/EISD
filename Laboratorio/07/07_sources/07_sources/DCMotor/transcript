@@ -1,0 +1,2 @@
+# vasim -c -cmd module.cir -do module.do
+# ** Error: (vasim-3020) The JWDB (EZwave) server cannot start the Java Virtual Machine. Please refer to EZwave User's Manual for possible causes.

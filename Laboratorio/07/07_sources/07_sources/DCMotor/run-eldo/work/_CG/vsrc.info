@@ -1,0 +1,9 @@
+[VERILOG-AMS Module]
+NAME = vsrc 
+SOURCE = /home/user/Dropbox/PhD/models/verilogams_motor_adaptation/components/vsrc.vams 
+LINE = 16
+[Generics]
+[Ports]
+(PORT TERMINAL p OUT electrical)
+(PORT TERMINAL n OUT electrical)
+(PORT SIGNAL dc IN (std_logic_vector ARRAY std_ulogic 1 (9 0)))
