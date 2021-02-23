@@ -8,31 +8,24 @@ module circuit(vp, vn, rp, rn);
 	parameter real cjo=0 from [0:inf);		// zero-bias junction capacitance (F)
 	parameter real phi=0.7 exclude 0;		// built-in junction potential (V)
 	parameter real r=100.0;					// resistor 
-	parameter real v=3.0;					// voltage
 	// PORTS
 	inout vp, n, rp;
 	// NODES
 	electrical vp, n, rp;
 	// BRANCHES
-	/*branch (n, vp) V1;
-	branch (vp, rp) res, cap;
-	branch (rp, n) R1;*/
-	branch (p, n) V1;
-	branch (rp, p) res, cap;
-	branch (n, rp) R1;
+	branch (n, vp) V1;
+	branch (vp, rp) D1;
+	branch (rp, n) R1;
 	// VARIABLE
 	real qd;
-
+	// GROUND NODE
+	ground n;
 	analog begin
-		// 3 Volts source
-		V(V1) <+ v*sin($abstime*2*2*`M_PI);
-
 		// Diode
-		I(res) <+ is*(limexp(V(res)/$vt) - 1);
-		qd = tf*I(res) - 2*cjo*phi*sqrt(1 - V(cap)/phi);
-		I(cap) <+ ddt(qd);
-
+		//V(D1) <+ $ln(I(D1)/is)*$vt;
 		// Resistor
-		I(R1) <+ V(R1)/r;
+		//V(R1) <+ I(R1)*r;
+
+		V(V1) <+ $ln(I(D1)/is)*$vt + I(R1)*r;
 	end
 endmodule
