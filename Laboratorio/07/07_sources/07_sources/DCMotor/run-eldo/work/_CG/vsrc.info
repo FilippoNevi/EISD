@@ -1,6 +1,6 @@
 [VERILOG-AMS Module]
 NAME = vsrc 
-SOURCE = /home/user/Dropbox/PhD/models/verilogams_motor_adaptation/components/vsrc.vams 
+SOURCE = /home/user/EISD/Laboratorio/07/07_sources/07_sources/DCMotor/components/vsrc.vams 
 LINE = 16
 [Generics]
 [Ports]

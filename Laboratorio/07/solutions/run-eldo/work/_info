@@ -1,0 +1,82 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/user/EISD/Laboratorio/07/solutions/run-eldo
+:circuit
+!s20a 1
+!s209 5
+!s208 OBF2kME2;c31`731O671I7
+VOBF2kME2;c31`731O671I7
+!s207 28
+Z1 !s206 1614377715
+w1614377618
+Z2 !s205  +ogr  -k 2005 
+!s204 1
+Z3 !s203 4149
+!s202 216
+ncircuit
+F../components/circuit.vams
+R0
+!s201 8
+Z4 !s8d adms
+:diode_circuit_tb
+!s20a 0
+!s209 6
+!s208 <g53In93X_B2KZ30C932a5
+V<g53In93X_B2KZ30C932a5
+!s207 1
+!s206 1614377716
+w1614377712
+R2
+!s204 1
+R3
+!s202 216
+ndiode_circuit_tb
+Z5 F../testbenches/diode_circuit_tb.vams
+R0
+!s201 8
+R4
+vvloga_dig_submod_diode_circuit_tb
+!s110 1614377716
+!i10b 1
+!s100 AKoig>:9hlmMDmaoSQ:7h3
+Ik<PH_H9]4?^j14>n4h3JZ1
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1614377716
+8../testbenches/diode_circuit_tb.vams
+R5
+L0 4
+OL;L;10.6_1;65
+r1
+!s85 0
+31
+!s108 1614377716.000000
+!s107 /home/user/EISD/Laboratorio/07/solutions/run-eldo/work/_CG/vloga_dig_submod_diode_circuit_tb.v|
+!s90 -work|/home/user/EISD/Laboratorio/07/solutions/run-eldo/work|-adms_unitsinfo|/tmp/valogMOqxos|-quiet|-stats=none|/home/user/EISD/Laboratorio/07/solutions/run-eldo/work/_CG/vloga_dig_submod_diode_circuit_tb.v|
+!i113 1
+o-quiet -work /home/user/EISD/Laboratorio/07/solutions/run-eldo/work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+tCvgOpt 0
+:vsrc
+!s20a 1
+!s209 5
+!s208 k<D2<f325H63iTF37Q33<5
+Vk<D2<f325H63iTF37Q33<5
+!s207 29
+R1
+w1614376858
+R2
+!s204 1
+!s203 4171
+!s202 218
+nvsrc
+F../components/vsrc.vams
+R0
+!s201 8
+R4

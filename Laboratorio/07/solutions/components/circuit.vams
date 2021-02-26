@@ -1,0 +1,24 @@
+`include "disciplines.vams"
+`timescale 1us / 1us
+
+module circuit(res, p, n);
+	
+	// PARAMETERS
+	parameter real r=1000.0;					// resistor
+	parameter real is=10f;			// saturation current
+	// PORTS
+	inout res, p, n;
+	
+	// NODES
+	electrical res, p, n;
+	// GROUND NODE
+	ground n;
+	
+	// BEHAVIOUR
+	analog begin
+		// Diode current
+		I(p, res) <+ is*limexp(V(p, res)/$vt);
+		// Resistor current
+		I(res, n) <+ V(res, n)/r;
+	end
+endmodule

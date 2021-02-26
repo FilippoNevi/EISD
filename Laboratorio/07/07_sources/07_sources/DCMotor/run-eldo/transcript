@@ -1,21 +1,20 @@
-vasim -cmd module.cir
+# vasim -c -cmd module.cir -do module.do
 # ** Note: (vasim-3800) Running Questa ADMS 17.1 patch1 Fri Apr  7 09:46:03 GMT 2017
-# +   on ed5cb34b22e1 Linux x86_64(4.15.0-121-generic) #123-Ubuntu SMP Mon Oct 5 16:16:40 UTC 2020
+# +   on 7af5824b0bfe Linux x86_64(5.4.0-65-generic) #73~18.04.1-Ubuntu SMP Tue Jan 19 09:02:24 UTC 2021
 # ELDO 17.1 patch1 (64 bits) Thu Apr  6 15:28:32 GMT 2017
-# EZwave 17.1 patch1 Thu Apr  6 07:07:02 GMT 2017
 # System Information:
 # *** User  : unknown
 # *** OS    : \S [VCO = aol]
 # *** CPU   :
-#     Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz
+#     Intel(R) Core(TM) i5-4590 CPU @ 3.30GHz
 #     Number of physical processors     : 1
 #     Hyper-Threading Technology        : disabled
 #     Number of cpu cores               : 4
 #     Number of logical processors      : 4
-# *** Freq  : 3300.000MHz
+# *** Freq  : 2455.209MHz
 # *** Cache : 6144 KB
-# *** MEM   : 32826036 kB
-# *** Date  : Thu Nov  5 09:44:14 2020
+# *** MEM   : 16334864 kB
+# *** Date  : Wed Feb 24 10:45:57 2021
 # Copyright 2000 Mentor Graphics Corporation
 # All Rights Reserved
 # THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY
@@ -29,6 +28,7 @@ vasim -cmd module.cir
 # ModelSim for Questa-64 Version 10.6_1 2017.01
 #
 # Reading pref.tcl
+# 10.6_1
 # Loading "/opt/mentor/questasim/libs/ieee.math_real"
 # Loading "/opt/mentor/questasim/libs/ieee.fundamental_constants"
 # Loading "/opt/mentor/questasim/libs/ieee.electrical_systems"
@@ -36,17 +36,31 @@ vasim -cmd module.cir
 # Loading "/opt/mentor/questasim/libs/MGC_AMS.wreal_pkg"
 # Loading "/opt/mentor/questasim/libs/ieee.numeric_bit"
 # Loading "/opt/mentor/questasim/libs/ieee.upf"
-# Loading "/home/user/Dropbox/PhD/models/verilogams_motor_adaptation/run-eldo/work.motor_long_tb"
-# Loading "/home/user/Dropbox/PhD/models/verilogams_motor_adaptation/run-eldo/work.vsrc"
-# Loading "/home/user/Dropbox/PhD/models/verilogams_motor_adaptation/run-eldo/work.motor"
-# Start time: 09:44:14 on Nov 05,2020
-# Start time: 09:44:14 on Nov 05,2020
-# Loading /home/user/Dropbox/PhD/models/verilogams_motor_adaptation/run-eldo/work.vloga_dig_submod_motor_long_tb
+# Loading "/home/user/EISD/Laboratorio/07/07_sources/07_sources/DCMotor/run-eldo/work.motor_long_tb"
+# Loading "/home/user/EISD/Laboratorio/07/07_sources/07_sources/DCMotor/run-eldo/work.vsrc"
+# Loading "/home/user/EISD/Laboratorio/07/07_sources/07_sources/DCMotor/run-eldo/work.motor"
+# Start time: 10:45:57 on Feb 24,2021
+# Start time: 10:45:57 on Feb 24,2021
+# //  Questa Sim-64
+# //  Version 10.6_1 linux_x86_64 Jan 30 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading /home/user/EISD/Laboratorio/07/07_sources/07_sources/DCMotor/run-eldo/work.vloga_dig_submod_motor_long_tb
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading /opt/mentor/questasim/libs/MS/OS/aol/libVLA2D_64.so
-# End time: 09:44:22 on Nov 05,2020, Elapsed time: 0:00:08
+# End time: 10:45:58 on Feb 24,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 #  ----------------------------
 # | Analog Data pre-processing |
@@ -63,39 +77,164 @@ vasim -cmd module.cir
 # ----------- Summary done -----------
 #     Parsing  cpu Time 0h 0mn 0s 150ms 
 # Load done
-restore test
-#    Global cpu Time 0h 0mn 0s 170ms 
-#    Global Elapsed Time 0h 0mn 22s 
-# ** Note: (vasim-3800) Running Questa ADMS 17.1 patch1 Fri Apr  7 09:46:03 GMT 2017
-# +   on ed5cb34b22e1 Linux x86_64(4.15.0-121-generic) #123-Ubuntu SMP Mon Oct 5 16:16:40 UTC 2020
-# ELDO 17.1 patch1 (64 bits) Thu Apr  6 15:28:32 GMT 2017
-# EZwave 17.1 patch1 Thu Apr  6 07:07:02 GMT 2017
-# System Information:
-# *** User  : unknown
-# *** OS    : \S [VCO = aol]
-# *** CPU   :
-#     Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz
-#     Number of physical processors     : 1
-#     Hyper-Threading Technology        : disabled
-#     Number of cpu cores               : 4
-#     Number of logical processors      : 4
-# *** Freq  : 3299.999MHz
-# *** Cache : 6144 KB
-# *** MEM   : 32826036 kB
-# *** Date  : Thu Nov  5 09:44:36 2020
-# Copyright 2000 Mentor Graphics Corporation
-# All Rights Reserved
-# THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY
-# INFORMATION WHICH ARE THE PROPERTY OF MENTOR
-# GRAPHICS CORPORATION OR ITS LICENSORS AND IS
-# SUBJECT TO LICENSE TERMS.
-#  ---------------
-# | Load starting |
-#  ---------------
-# Loading "/opt/mentor/questasim/libs/std.standard"
-# ModelSim for Questa-64 Version 10.6_1 2017.01
-#
-# Reading pref.tcl
-# ** Fatal: (SIGSEGV) Bad pointer access. Closing vsimk.
-# ** Fatal: Read failure in vlm process (0,0)
-# ** Error: Loading design failed
+# do module.do
+# ** Warning: (eldo-118)   NODE "YTOP.DRIVE": No DC path to ground.
+#  -----------------------------
+# | Quiescent Point computation |
+#  -----------------------------
+# Analog DC computation starting
+# simTime: 0.000000
+# Analog DC computation done
+# Digital computation at time 0 us starting
+# state 0
+# Digital computation at time 0 us done
+# Analog DC computation starting
+# simTime: 0.000000
+# Analog DC computation done
+# Digital computation at time 0 us starting
+# Digital computation at time 0 us done
+# Quiescent point done
+#  -----------------------------
+# | Transient analysis starting |
+#  -----------------------------
+# Eldo analog kernel simulation effective options:
+#   VNTOL  = 1.000000e-06
+#   RELTOL = 6.111111e-04
+#   HMIN   = 1.000000e-03 ns
+#   HMAX will be set later during simulation and may vary
+#   EPS    = 5.000000e-04
+# Starting analog time is 0.000000 ns
+# Simulation time for "run -all" is 1.000000E+10 ns
+# simTime: 0.000000
+# simTime: 0.000000
+# simTime: 0.000000
+# simTime: 0.000000
+# simTime: 0.000000
+# simTime: 0.000000
+# simTime: 0.000000
+# simTime: 0.000000
+# simTime: 0.000000
+# simTime: 0.000000
+# simTime: 0.000000
+# simTime: 0.000000
+# simTime: 0.000000
+# simTime: 0.000000
+# simTime: 0.000000
+# simTime: 0.000000
+# simTime: 0.000000
+# simTime: 0.000000
+# simTime: 0.000001
+# simTime: 0.000001
+# simTime: 0.000002
+# simTime: 0.000004
+# simTime: 0.000008
+# simTime: 0.000017
+# simTime: 0.000034
+# simTime: 0.000067
+# simTime: 0.000134
+# simTime: 0.000268
+# state 1
+# simTime: 0.000537
+# simTime: 0.001074
+# state 2
+# simTime: 0.001500
+# simTime: 0.001500
+# simTime: 0.001500
+# simTime: 0.001500
+# simTime: 0.001500
+# simTime: 0.001500
+# simTime: 0.001500
+# simTime: 0.001500
+# simTime: 0.001500
+# simTime: 0.001500
+# simTime: 0.001500
+# simTime: 0.001500
+# simTime: 0.001500
+# simTime: 0.001500
+# simTime: 0.001500
+# simTime: 0.001500
+# simTime: 0.001500
+# simTime: 0.001500
+# simTime: 0.001500
+# simTime: 0.001500
+# simTime: 0.001500
+# simTime: 0.001501
+# simTime: 0.001501
+# simTime: 0.001502
+# simTime: 0.001504
+# simTime: 0.001508
+# simTime: 0.001517
+# simTime: 0.001534
+# simTime: 0.001550
+# simTime: 0.001560
+# simTime: 0.001565
+# simTime: 0.001576
+# simTime: 0.001598
+# simTime: 0.001641
+# simTime: 0.001727
+# simTime: 0.001899
+# simTime: 0.002244
+# simTime: 0.002934
+# simTime: 0.004313
+# simTime: 0.007072
+# simTime: 0.012589
+# simTime: 0.023624
+# simTime: 0.045693
+# simTime: 0.089831
+# simTime: 0.178108
+# simTime: 0.354661
+# simTime: 0.665930
+# state 1000
+# simTime: 0.999500
+# simTime: 0.999500
+# simTime: 0.999503
+# simTime: 0.999506
+# simTime: 0.999512
+# simTime: 0.999524
+# simTime: 0.999547
+# simTime: 0.999550
+# simTime: 0.999556
+# simTime: 0.999560
+# simTime: 0.999568
+# simTime: 0.999584
+# simTime: 0.999617
+# simTime: 0.999682
+# simTime: 0.999813
+# simTime: 1.000074
+# simTime: 1.000597
+# simTime: 1.001643
+# simTime: 1.003735
+# simTime: 1.007918
+# simTime: 1.016285
+# simTime: 1.033018
+# simTime: 1.066484
+# simTime: 1.133417
+# simTime: 1.267283
+# simTime: 1.535014
+# simTime: 1.944579
+# simTime: 2.715656
+# simTime: 4.257810
+# simTime: 7.342120
+# simTime: 10.000000
+# ................................................
+# Simulation progress                : 100.00% (t = 10 sec)
+# Elapsed CPU time                   :  0h  0mn  0s 350    ( 0h  0mn  0s 350)
+# Elapsed time                       :  0h  0mn  2s   0    ( 0h  0mn  2s   0)
+# CPU usage                          :  17%                ( 17%)
+q
+
+# Transient analysis done
+#    Global cpu Time 0h 0mn 0s 350ms 
+#    Global Elapsed Time 0h 0mn 24s 
+# ------------| Simulation Information |-------------
+# Peak memory usage (MB): 72
+# Virtual memory usage (MB): 588
+# 3 devices
+# 3 nodes
+# 0 MOS or BIP model calls
+# 108 steps computed
+# ----------- Simulation Information done -----------
+# --- Simulation stopped at time 10 sec
+# Newton iteration            :  1.675926
+# Total of transactions       :  30084
+# Total of events             :  22035

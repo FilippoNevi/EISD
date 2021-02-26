@@ -1,6 +1,6 @@
 [VERILOG-AMS Module]
 NAME = motor 
-SOURCE = /home/user/Dropbox/PhD/models/verilogams_motor_adaptation/components/motor.vams 
+SOURCE = /home/user/EISD/Laboratorio/07/07_sources/07_sources/DCMotor/components/motor.vams 
 LINE = 22
 [Generics]
 ( km   real   4.500000e+00 ) 

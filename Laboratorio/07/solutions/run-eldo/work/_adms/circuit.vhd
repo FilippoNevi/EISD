@@ -1,0 +1,16 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+LIBRARY STD;
+USE STD.ALL;
+
+ENTITY circuit IS
+  GENERIC (
+   r :   real :=  1.000000e+03;
+   \is\ :   real :=  1.000000e-14 );
+  PORT (
+    SIGNAL res : INOUT STD_LOGIC;
+    SIGNAL p : INOUT STD_LOGIC;
+    SIGNAL n : INOUT STD_LOGIC);
+END ENTITY circuit;
+

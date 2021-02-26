@@ -1,0 +1,16 @@
+START report: Wed Feb 24 10:45:57 2021 
+** Note: (vasim-3800) Running Questa ADMS 17.1 patch1 Fri Apr  7 09:46:03 GMT 2017
++   on 7af5824b0bfe Linux x86_64(5.4.0-65-generic) #73~18.04.1-Ubuntu SMP Tue Jan 19 09:02:24 UTC 2021
+Loading "/opt/mentor/questasim/libs/std.standard"
+Loading "/opt/mentor/questasim/libs/ieee.math_real"
+Loading "/opt/mentor/questasim/libs/ieee.fundamental_constants"
+Loading "/opt/mentor/questasim/libs/ieee.electrical_systems"
+Loading "/opt/mentor/questasim/libs/ieee.std_logic_1164"
+Loading "/opt/mentor/questasim/libs/MGC_AMS.wreal_pkg"
+Loading "/opt/mentor/questasim/libs/ieee.numeric_bit"
+Loading "/opt/mentor/questasim/libs/ieee.upf"
+Loading "/home/user/EISD/Laboratorio/07/07_sources/07_sources/DCMotor/run-eldo/work.motor_long_tb"
+Loading "/home/user/EISD/Laboratorio/07/07_sources/07_sources/DCMotor/run-eldo/work.vsrc"
+Loading "/home/user/EISD/Laboratorio/07/07_sources/07_sources/DCMotor/run-eldo/work.motor"
+Load done
+** Warning: (eldo-118)   NODE "YTOP.DRIVE": No DC path to ground.

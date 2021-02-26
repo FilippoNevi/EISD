@@ -1,0 +1,11 @@
+[VERILOG-AMS Module]
+NAME = circuit 
+SOURCE = /home/user/EISD/Laboratorio/07/solutions/components/circuit.vams 
+LINE = 4
+[Generics]
+( r   real   1.000000e+03 ) 
+( is   real   1.000000e-14 ) 
+[Ports]
+(PORT TERMINAL res INOUT electrical)
+(PORT TERMINAL p INOUT electrical)
+(PORT TERMINAL n INOUT electrical)

@@ -1,6 +1,6 @@
 [VERILOG Module]
 NAME = vloga_dig_submod_motor_long_tb 
-SOURCE = /home/user/Dropbox/PhD/models/verilogams_motor_adaptation/run-eldo/work/_CG/vloga_dig_submod_motor_long_tb.v 
+SOURCE = /home/user/EISD/Laboratorio/07/07_sources/07_sources/DCMotor/run-eldo/work/_CG/vloga_dig_submod_motor_long_tb.v 
 LINE = 4
 [Generics]
 [Ports]

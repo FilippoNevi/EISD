@@ -1,6 +1,6 @@
 [VERILOG-AMS Module]
 NAME = motor_long_tb 
-SOURCE = /home/user/Dropbox/PhD/models/verilogams_motor_adaptation/testbenches/motor_long_tb.vams 
+SOURCE = /home/user/EISD/Laboratorio/07/07_sources/07_sources/DCMotor/testbenches/motor_long_tb.vams 
 LINE = 6
 [Generics]
 [Ports]

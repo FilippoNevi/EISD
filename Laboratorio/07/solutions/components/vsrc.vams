@@ -1,0 +1,36 @@
+`timescale 1us / 1us
+
+`include "disciplines.vams"
+`include "constants.vams"
+
+module vsrc (p, n, dc);
+
+    // PARAMETERS -----------------------
+
+    // PORTS ---------------------------
+    input [9:0] dc;
+    output p, n;
+
+    //ground n;
+
+    // NODES ---------------------------
+    electrical p, n;
+
+    real vin;
+
+    // BEHAVIOR ------------------------
+    analog begin
+
+        //@(cross(dc-0.5))
+
+        /*if (dc > 0.5)
+            vin = 3.0;
+        else
+            //vin = 0.0;
+
+        V(p, n) <+ transition(vin, 0, 50u, 50u);*/
+
+        V(p, n) <+ 3.0*sin($abstime*2*2*`M_PI);
+        
+    end
+endmodule

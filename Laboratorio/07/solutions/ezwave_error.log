@@ -1,0 +1,27 @@
+BUILD TIMESTAMP: Thu Apr  6 07:07:02 GMT 2017
+
+DATE: Friday 26 February 2021 22:15:26.000
+THR: main
+java.io.IOException: No such file or directory
+	at java.io.UnixFileSystem.createFileExclusively(Native Method)
+	at java.io.File.createNewFile(Unknown Source)
+	at com.mentor.jeda.wve.WveSessionProps.b(WveSessionProps.java:6729)
+	at com.mentor.jeda.wve.WveClient.c(WveClient.java:654)
+	at com.mentor.jeda.wve.WveClient.<init>(WveClient.java:163)
+	at com.mentor.jeda.wve.WveClient.<init>(WveClient.java:96)
+	at com.mentor.jeda.wve.WveApp.main(WveApp.java:375)
+
+DATE: Friday 26 February 2021 22:15:26.550
+THR: InitBackGroundTasks
+Error while initializing Python: Traceback (innermost last):
+  File "<string>", line 1, in ?
+ImportError: no module named com
+
+
+DATE: Friday 26 February 2021 22:15:26.555
+THR: InitBackGroundTasks
+Error while initializing TCLTraceback (innermost last):
+  File "<string>", line 1, in ?
+ImportError: no module named com
+
+

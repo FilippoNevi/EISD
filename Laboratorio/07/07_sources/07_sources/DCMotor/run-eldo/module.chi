@@ -1,4 +1,4 @@
-  Run on ed5cb34b22e1 (Linux 4.15.0-121-generic)
+  Run on 7af5824b0bfe (Linux 5.4.0-65-generic)
 
 
 ***** SYSTEM INFORMATION ...
@@ -6,13 +6,379 @@
 *** User  : unknown
 *** OS    : \S [VCO = aol]
 *** CPU   :
-    Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz
+    Intel(R) Core(TM) i5-4590 CPU @ 3.30GHz
     Number of physical processors     : 1
     Hyper-Threading Technology        : disabled
     Number of cpu cores               : 4
     Number of logical processors      : 4
-*** Freq  : 3299.999MHz
+*** Freq  : 2022.279MHz
 *** Cache : 6144 KB
-*** MEM   : 32826036 kB
-*** Date  : Thu Nov  5 09:44:36 2020
+*** MEM   : 16334864 kB
+*** Date  : Wed Feb 24 10:45:57 2021
 
+*** Questa-ADMS VERSION : ELDO 17.1 patch1 (64 bits) Thu Apr  6 15:28:32 GMT 2017
+
+/opt/mentor/questasim/aol/bin/vams_ms_64 -i /home/user/EISD/Laboratorio/07/07_sources/07_sources/DCMotor/run-eldo/module.cir -noconf -nogwl -cou46 -gwl wdl -nocou -wdb_folder -wdb_incremental -jwdb_design -float -hdla /home/user/EISD/Laboratorio/07/07_sources/07_sources/DCMotor/run-eldo/work  -hdlav3opt -jwdbport 42035 -jwdbhost 7af5824b0bfe -folder -c -mach -jwdb_checkpoint 1 -msl transcript_ms
+
+
+***** PRE-PROCESSING ...
+1*******24-Feb-21 *******  ELDO 17.1 patch1 (64 bits)  (v8.4_1.1)  *******10:45:57******
+
+0* Temporary input file
+
+0****     INPUT LISTING                                               
+
+0***********************************************************************
+    2  
+    3  .MODEL MOTOR_LONG_TB MACRO LANG=VERILOGA
+    4  ytop motor_long_tb
+    5  
+    6  .tran 1u 10sec
+    7  
+    8  
+    9  
+   10  .END
+
+End of file 
+
+
+***** 0  error(s). 
+***** 0  warning(s). 
+
+
+***** GENERATION ...
+
+
+***** 0  error(s). 
+***** 0  warning(s). 
+
+
+INFORMATION ABOUT COMPILATION 
+
+Peak memory usage (MB): 68
+Virtual memory usage (MB): 588
+3 elements
+3 nodes 
+0 input signals
+Detail about objects and nodes found in the design, and simulated by Eldo:
+Number of nodes                     3
+Number of intrinsic nodes           0
+Number of input signals             0
+Number of resistors                 0
+Number of floating capacitors       0
+Number of grounded capacitors       0
+Number of inductors                 0
+Number of voltage sources           0
+Number of current sources           0
+Number of dependent sources         0
+Number of diodes                    0
+Number of BJT                       0
+Number of JFET                      0
+Number of MOS                       0
+Number of SWITCHES                  0
+Number of transmission lines        0
+ADMS devices                        3
+Total number of elements simulated  3
+Warning 118:  NODE "YTOP.DRIVE": No DC path to ground.
+*** DATE: 24-Feb-2021 10:45:58
+*** TITLE: * Temporary input file
+
+TEMPERATURE : 27.000000 degrees C
+
+
+
+
+1***************24-Feb-2021 ***********************  ELDO 17.1 patch1 (64 bits)  (v8.4_1.1)  ***********************10:45:58*****************
+
+0* Temporary input file
+0****                 OPTION SUMMARY                                         TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+
+
+
+*** DC Control Options : 
+
+GMIN           = 1.00e-12 NMAXSIZE       = 100000   ITL1           = 100      
+GRAMP          = 0        NETSIZE        = 100      VMINDC         = UNDEF    
+VMAXDC         = UNDEF    
+
+*** Initial Accuracy Control Options (May be adjusted during simulation): 
+
+ITOL           = 1.00e-06 EPS            = 5.00e-03 VNTOL          = 1.00e-06 
+RELTOL         = 1.00e-03 RELERR         = 5.00e-02 PIVREL         = 1.00e-03 
+PIVTOL         = 1.00e-16 ABSTOL         = 1.00e-12 FLXTOL         = 1.00e-11 
+MAXORD         = 2.00e+00 
+
+*** Time-step Control Options : 
+
+ZOOMTIME       = 1.00e+00 STEP           = 0.00e+00 STARTSMP       = 0.00e+00 
+FREQSMP        = 0.00e+00 COURESOL       = 0.00e+00 TRTOL          = 7.00e+00 
+HMIN           = 1.00e-12 ITL3           = 3        ITL4           = 13       
+FT             = 1.25e-01 DCLOG          = 1.00e+00 LVLTIM         = 2        
+LVLCNV         = 2        DVDT           = -1       RELVAR         = 1.50e-01 
+ABSVAR         = 2.00e-01 SAMPLE         = 0.00e+00 HMAX           = UNDEF    
+
+
+*** MosFet default Options : 
+
+SCALE          = 1.00e+00 SCALM          = 1.00e+00 SCALEBSIM      = 1.00e+00 
+DEFAD          = UNDEF    DEFAS          = UNDEF    DEFPD          = UNDEF    
+DEFPS          = UNDEF    DEFW           = 1.00e-04 DEFL           = 1.00e-04 
+DEFNRD         = UNDEF    DEFNRS         = UNDEF    XA             = 6.00e-06 
+LIMRMOS        = UNDEF    SHRINK         = 1.00e+00 
+
+*** General Information Options : 
+
+CPTIME         = UNDEF    STAT           = 0        TIMEDIV        = 0        
+SIMUDIV        = 0        SAVETIME       = 0        MAXTRAN        = 1000     
+MAXNODES       = 10000    MAXV           = 1.00e+13 LIMPROBE       = 10000    
+FLICKER_NOISE  = 0        THERMAL_NOISE  = 0        TNOM           = 2.70e+01 
+TMAX           = UNDEF    
+SPICDC         = 0        SPIOUT         = 0        NEWTON         = 1        
+OSR            = 0        TRAP           = 1        GEAR           = 0        
+BE             = 0        PROBEOP        = 0        NOLAT          = 0        
+NWLAT          = 0        ANALOG         = 0        BBDEBUG        = 0        
+NOSIZECHK      = 0        QTRUNC         = 0        UNBOUND        = 0        
+LCAPOP         = 0        NOAEX          = 0        AEX            = 0        
+AEX            = 0        STVER          = 0        MOTOROLA       = 0        
+AMS            = 0        ASPEC          = 0        INPUT          = 0        
+NOINIT         = 0        PSF            = 0        NOBIN          = 0        
+NOCOU          = 1        WL             = 0        NODE           = 0        
+LIST           = 0        SPI3BIN        = 0        SPI3ASC        = 0        
+NOMOD          = 0        NOBIN          = 0        NOCOU          = 1        
+RMOS           = 0        NWRMOS         = 1        NONWRMOS       = 0        
+USEDEFAP       = 0        NOASCII        = 0        ASCII          = 1        
+MIXED          = 0        SWITCH         = 0        USERSWITCH     = 0        
+TIMING         = 0        MODWL          = 1        ULOGIC         = 0        
+
+
+
+
+1***************24-Feb-2021 ***********************  ELDO 17.1 patch1 (64 bits)  (v8.4_1.1)  ***********************10:45:58*****************
+
+0* Temporary input file
+0****                 CIRCUIT CHECKS SUMMARY                                 TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+
+Summary of situations encountered in the circuit 
+which can cause simulation issues:
+
+Missing connections: 1 occurrence(s)
+   Name of one of such node involved:    YTOP.DRIVE
+Work-around applied: No
+You may consider .OPTION RGND = #
+
+****************************************
+
+    DC cpu Time 0s 000ms 
+DC:1 iterations FOR DC analysis
+
+
+
+
+1***************24-Feb-2021 ***********************  ELDO 17.1 patch1 (64 bits)  (v8.4_1.1)  ***********************10:45:58*****************
+
+0* Temporary input file
+0****                 INITIAL TRANSIENT SOLUTION                           TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+  NODE         VOLTAGE    
+ YTOP.DRIVE       0.0       
+ YTOP.GND       0.0       
+ YTOP.SHAFT_POS       0.0       
+
+
+
+
+simTime: 0.000000
+    DC cpu Time 0s 000ms 
+DC:1 iterations FOR DC analysis
+
+
+
+
+1***************24-Feb-2021 ***********************  ELDO 17.1 patch1 (64 bits)  (v8.4_1.1)  ***********************10:45:58*****************
+
+0* Temporary input file
+0****                 INITIAL TRANSIENT SOLUTION                           TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+  NODE         VOLTAGE    
+ YTOP.DRIVE       0.0       
+ YTOP.GND       0.0       
+ YTOP.SHAFT_POS       0.0       
+
+
+
+
+simTime: 0.000000
+
+Questa-ADMS NEWTON: VNTOL=1.000000e-06 RELTOL=6.111111e-04
+
+simTime: 0.000000
+simTime: 0.000000
+simTime: 0.000000
+simTime: 0.000000
+simTime: 0.000000
+simTime: 0.000000
+simTime: 0.000000
+simTime: 0.000000
+simTime: 0.000000
+simTime: 0.000000
+simTime: 0.000000
+simTime: 0.000000
+simTime: 0.000000
+simTime: 0.000000
+simTime: 0.000000
+simTime: 0.000000
+simTime: 0.000000
+simTime: 0.000000
+simTime: 0.000001
+simTime: 0.000001
+simTime: 0.000002
+simTime: 0.000004
+simTime: 0.000008
+simTime: 0.000017
+simTime: 0.000034
+simTime: 0.000067
+simTime: 0.000134
+simTime: 0.000268
+simTime: 0.000537
+simTime: 0.001074
+simTime: 0.001500
+simTime: 0.001500
+simTime: 0.001500
+simTime: 0.001500
+simTime: 0.001500
+simTime: 0.001500
+simTime: 0.001500
+simTime: 0.001500
+simTime: 0.001500
+simTime: 0.001500
+simTime: 0.001500
+simTime: 0.001500
+simTime: 0.001500
+simTime: 0.001500
+simTime: 0.001500
+simTime: 0.001500
+simTime: 0.001500
+simTime: 0.001500
+simTime: 0.001500
+simTime: 0.001500
+simTime: 0.001500
+simTime: 0.001501
+simTime: 0.001501
+simTime: 0.001502
+simTime: 0.001504
+simTime: 0.001508
+simTime: 0.001517
+simTime: 0.001534
+simTime: 0.001550
+simTime: 0.001560
+simTime: 0.001565
+simTime: 0.001576
+simTime: 0.001598
+simTime: 0.001641
+simTime: 0.001727
+simTime: 0.001899
+simTime: 0.002244
+simTime: 0.002934
+simTime: 0.004313
+simTime: 0.007072
+simTime: 0.012589
+simTime: 0.023624
+simTime: 0.045693
+simTime: 0.089831
+simTime: 0.178108
+simTime: 0.354661
+simTime: 0.665930
+simTime: 0.999500
+simTime: 0.999500
+simTime: 0.999503
+simTime: 0.999506
+simTime: 0.999512
+simTime: 0.999524
+simTime: 0.999547
+simTime: 0.999550
+simTime: 0.999556
+simTime: 0.999560
+simTime: 0.999568
+simTime: 0.999584
+simTime: 0.999617
+simTime: 0.999682
+simTime: 0.999813
+simTime: 1.000074
+simTime: 1.000597
+simTime: 1.001643
+simTime: 1.003735
+simTime: 1.007918
+simTime: 1.016285
+simTime: 1.033018
+simTime: 1.066484
+simTime: 1.133417
+simTime: 1.267283
+simTime: 1.535014
+simTime: 1.944579
+simTime: 2.715656
+simTime: 4.257810
+simTime: 7.342120
+simTime: 10.000000
+
+
+
+1***************24-Feb-2021 ***********************  ELDO 17.1 patch1 (64 bits)  (v8.4_1.1)  ***********************10:45:58*****************
+
+0* Temporary input file
+0****                 ACCOUNTING INFORMATION                                 TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+
+
+
+Number of nodes                     3
+Number of intrinsic nodes           0
+Number of input signals             0
+Number of resistors                 0
+Number of floating capacitors       0
+Number of grounded capacitors       0
+Number of inductors                 0
+Number of voltage sources           0
+Number of current sources           0
+Number of dependent sources         0
+Number of diodes                    0
+Number of BJT                       0
+Number of JFET                      0
+Number of MOS                       0
+Number of SWITCHES                  0
+Number of transmission lines        0
+ADMS devices                        3
+Total number of elements simulated  3
+Number of equations                 5
+Number of non-zero terms            16
+Percent Zeros                         36
+Number of Newton iterations         181
+Average number of Newton iterations 1.676
+Number of accepted time steps       108
+Number of rejected time steps       14
+      due to LTE                    2
+      due to Newton                 10
+Evaluation of active devices        0
+Virtual memory size (MB)            588
+Peak memory size (MB)      72
+Number of time point rejection due 
+  to 'DIGITAL' solver ..............2
+   cpu Time 0s 190ms 
+Virtual memory size (MB)            588
+Peak memory size (MB)      72
