@@ -4,7 +4,7 @@
 module circuit(res, p, n);
 	
 	// PARAMETERS
-	parameter real r=1000.0;					// resistor
+	parameter real r=100.0;			// resistor
 	parameter real is=10f;			// saturation current
 	// PORTS
 	inout res, p, n;
