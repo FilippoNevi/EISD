@@ -89,17 +89,17 @@ module tb;
         rst = 1'b0;
         
         // When data request (din_req) set din port 
-        /*while(~din_req)begin #20; end
+        while(~din_req)begin #20; end
         din = 32'd6;
         din_rdy = 1'd1;
-        #100000;*/
+        #100000;
         // 
 
         // Root testbench code
         while(~din_req)begin #20; end
-        din = 32'd36;
+        din = 8'd36;
         din_rdy = 1'd1;
-        #100000
+        #100000;
         
     end
 endmodule

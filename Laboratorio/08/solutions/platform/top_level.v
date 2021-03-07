@@ -78,6 +78,15 @@ module top_level(
     wire [31:0] apb_2_prdata;
     
     //add new wire for the bus
+    wire        apb_3_pclk;
+    wire        apb_3_presetn;
+    wire [31:0] apb_3_paddr;
+    wire        apb_3_psel;
+    wire        apb_3_penable;
+    wire        apb_3_pwrite;
+    wire [31:0] apb_3_pwdata;
+    wire        apb_3_pready;
+    wire [31:0] apb_3_prdata;
     
     //-----------------------------------
     // Memory
@@ -168,7 +177,16 @@ module top_level(
                         .apb_2_pwrite(apb_2_pwrite),
                         .apb_2_pwdata(apb_2_pwdata),
                         .apb_2_pready(apb_2_pready),
-                        .apb_2_prdata(apb_2_prdata)
+                        .apb_2_prdata(apb_2_prdata),
+                        .apb_3_pclk(apb_3_pclk),
+                        .apb_3_presetn(apb_3_presetn),
+                        .apb_3_paddr(apb_3_paddr),
+                        .apb_3_psel(apb_3_psel),
+                        .apb_3_penable(apb_3_penable),
+                        .apb_3_pwrite(apb_3_pwrite),
+                        .apb_3_pwdata(apb_3_pwdata),
+                        .apb_3_pready(apb_3_pready),
+                        .apb_3_prdata(apb_3_prdata)
                         );
     
     //------------------------------------------------------
