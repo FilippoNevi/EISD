@@ -24,8 +24,8 @@ extern "C" {
 #define EPS_INDICATORS 1e-14
 
 #define NUMBER_OF_REALS 4 // Adjust the number of variables
-#define NUMBER_OF_INTEGERS 6 // Adjust the number of variables
-#define NUMBER_OF_BOOLEANS 6 // Adjust the number of variables
+#define NUMBER_OF_INTEGERS 8 // Adjust the number of variables
+#define NUMBER_OF_BOOLEANS 7 // Adjust the number of variables
 #define NUMBER_OF_STRINGS  0
 #define NUMBER_OF_STATES 0
 #define NUMBER_OF_EVENT_INDICATORS 0
@@ -113,6 +113,16 @@ typedef struct {
     bool reset;
     double threshold;
 	  // Add other model variables 
+    bool Input_ready;
+    bool Result_ready;
+    uint8_t Result_1;
+    uint8_t Result_2;
+    uint8_t Result_3;
+    uint8_t Result_4;
+    uint8_t Input_1;
+    uint8_t Input_2;
+    uint8_t Input_3;
+    uint8_t Input_4;
 
     CSTATES status;
 

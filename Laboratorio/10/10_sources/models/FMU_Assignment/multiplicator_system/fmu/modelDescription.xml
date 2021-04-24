@@ -25,8 +25,51 @@ numberOfEventIndicators="0">
     <Category name="logFmi2Call" />
 </LogCategories>
 <ModelVariables>
+    <!-- Integer variables -->
+    <ScalarVariable name="Input_1" valueReference="0" description="integer" causality="input" variability="discrete" initial="approx">
+    <Integer start="0" />
+    </ScalarVariable>
 
-<!-- ....... -->
+    <ScalarVariable name="Input_2" valueReference="1" description="integer" causality="input" variability="discrete" initial="approx">
+    <Integer start="0" />
+    </ScalarVariable>
+
+    <ScalarVariable name="Input_3" valueReference="2" description="integer" causality="input" variability="discrete" initial="approx">
+    <Integer start="0" />
+    </ScalarVariable>
+
+    <ScalarVariable name="Input_4" valueReference="3" description="integer" causality="input" variability="discrete" initial="approx">
+    <Integer start="0" />
+    </ScalarVariable>
+
+    <ScalarVariable name="Output_1" valueReference="4" description="integer" causality="output" variability="discrete" initial="approx">
+    <Integer start="0" />
+    </ScalarVariable>
+
+    <ScalarVariable name="Output_2" valueReference="5" description="integer" causality="output" variability="discrete" initial="approx">
+    <Integer start="0" />
+    </ScalarVariable>
+
+    <ScalarVariable name="Output_3" valueReference="6" description="integer" causality="output" variability="discrete" initial="approx">
+    <Integer start="0" />
+    </ScalarVariable>
+
+    <ScalarVariable name="Output_4" valueReference="7" description="integer" causality="output" variability="discrete" initial="approx">
+    <Integer start="0" />
+    </ScalarVariable>
+
+    <!-- Boolean variables -->
+    <ScalarVariable name="Reset" valueReference="0" description="bool" causality="input" variability="discrete" initial="approx">
+    <Boolean  start="false" />
+    </ScalarVariable>
+
+    <ScalarVariable name="Input_ready" valueReference="1" description="bool" causality="input" variability="discrete" initial="approx">
+    <Boolean start="false" />
+    </ScalarVariable>
+
+    <ScalarVariable name="Output_ready" valueReference="2" description="bool" causality="output" variability="discrete" initial="approx">
+    <Boolean start="false" />
+    </ScalarVariable>
 
 </ModelVariables>
 <ModelStructure>

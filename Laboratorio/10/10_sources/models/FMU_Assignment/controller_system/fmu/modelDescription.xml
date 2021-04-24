@@ -41,14 +41,50 @@ numberOfEventIndicators="0">
   <Boolean  start ="false" />
   </ScalarVariable>
   <!-- Add other bool variables here -->
-
+  <ScalarVariable name="Input_ready" valueReference="5" description="bool" causality="output" variability="discrete" initial="approx">
+  <Boolean start="false" />
   </ScalarVariable>
+
+  <ScalarVariable name="Result_ready" valueReference="6" description="bool" causality="input" variability="discrete" initial="approx">
+  <Boolean start="false" />
+  </ScalarVariable>
+
 	<ScalarVariable name="threshold" valueReference="0" description="double" causality="output" variability="discrete" initial="approx">
 	<Real  start ="0.0" />
 	</ScalarVariable>
   <!-- Add other integer variables here -->
-
+  <ScalarVariable name="Result_1" valueReference="0" description="integer" causality="input" variability="discrete" initial="approx">
+  <Integer start="0" />
   </ScalarVariable>
+
+  <ScalarVariable name="Result_2" valueReference="1" description="integer" causality="input" variability="discrete" initial="approx">
+  <Integer start="0" />
+  </ScalarVariable>
+
+  <ScalarVariable name="Result_3" valueReference="2" description="integer" causality="input" variability="discrete" initial="approx">
+  <Integer start="0" />
+  </ScalarVariable>
+
+  <ScalarVariable name="Result_4" valueReference="3" description="integer" causality="input" variability="discrete" initial="approx">
+  <Integer start="0" />
+  </ScalarVariable>
+
+  <ScalarVariable name="Input_1" valueReference="4" description="integer" causality="output" variability="discrete" initial="approx">
+  <Integer start="2" />
+  </ScalarVariable>
+
+  <ScalarVariable name="Input_2" valueReference="5" description="integer" causality="output" variability="discrete" initial="approx">
+  <Integer start="128" />
+  </ScalarVariable>
+
+  <ScalarVariable name="Input_3" valueReference="6" description="integer" causality="output" variability="discrete" initial="approx">
+  <Integer start="2" />
+  </ScalarVariable>
+
+  <ScalarVariable name="Input_4" valueReference="7" description="integer" causality="output" variability="discrete" initial="approx">
+  <Integer start="128" />
+  </ScalarVariable>
+
 </ModelVariables>
 <ModelStructure>
 </ModelStructure>

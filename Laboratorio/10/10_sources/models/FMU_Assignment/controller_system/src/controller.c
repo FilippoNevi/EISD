@@ -30,6 +30,16 @@ extern "C" {
         comp->reset = b(4);
         comp->threshold = r(0);
         //Add something here
+        comp->Input_ready = b(5);
+        comp->Result_ready = b(6);
+        comp->Result_1 = integer(0);
+        comp->Result_2 = integer(1);
+        comp->Result_3 = integer(2);
+        comp->Result_4 = integer(3);
+        comp->Input_1 = integer(4);
+        comp->Input_2 = integer(5);
+        comp->Input_3 = integer(6);
+        comp->Input_4 = integer(7);
 
         // Model implementation
         switch( comp->status )
@@ -84,6 +94,16 @@ extern "C" {
         b(4) = comp->reset;
         //Add something here
         r(0) = comp->threshold;
+        b(5) = comp->Input_ready;
+        b(6) = comp->Result_ready;
+        integer(0) = comp->Result_1;
+        integer(1) = comp->Result_2;
+        integer(2) = comp->Result_3;
+        integer(3) = comp->Result_4;
+        integer(4) = comp->Input_1;
+        integer(5) = comp->Input_2;
+        integer(6) = comp->Input_3;
+        integer(7) = comp->Input_4;
 
     }
 
