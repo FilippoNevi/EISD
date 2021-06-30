@@ -21,18 +21,23 @@ extern "C" {
     //Implementation of the user-defined utility functions goes here
 
 
-    void controller_implementation( ModelInstance * comp )
+    void multiplicator_implementation( ModelInstance * comp )
     {
-        comp->HIGH = b(0);
-        comp->LOW = b(1);
-        comp->OPEN = b(2);
-        comp->CLOSE = b(3);
-        comp->reset = b(4);
-        comp->threshold = r(0);
-        //Add something here
+        comp->Input_1 = integer(0);
+        comp->Input_2 = integer(1);
+        comp->Input_3 = integer(2);
+        comp->Input_4 = integer(3);
+        comp->Output_1 = integer(4);
+        comp->Output_2 = integer(5);
+        comp->Output_3 = integer(6);
+        comp->Output_4 = integer(7);
+
+        comp->Reset = b(0);
+        comp->Input_ready = b(1);
+        comp->Output_ready = b(2);
 
         // Model implementation
-        switch( comp->status )
+        /*switch( comp->status )
         {
             case ACTIVE:
                 comp->threshold = 0.7;
@@ -83,7 +88,7 @@ extern "C" {
         b(3) = comp->CLOSE;
         b(4) = comp->reset;
         //Add something here
-        r(0) = comp->threshold;
+        r(0) = comp->threshold;*/
 
     }
 
@@ -1084,7 +1089,7 @@ extern "C" {
 #endif
 
         // PUT HERE YOUR MODEL IMPLEMENTATION
-        controller_implementation( comp );
+        multiplicator_implementation( comp );
 
 
 

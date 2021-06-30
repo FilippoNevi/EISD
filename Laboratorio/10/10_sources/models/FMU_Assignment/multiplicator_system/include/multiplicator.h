@@ -33,8 +33,8 @@ extern "C" {
 
 
 #define STATES {};
-#define MODEL_IDENTIFIER controller_system
-#define MODEL_GUID "{controller-a5cf1fbd-89ca-495b-b5ff-ec53a96c6173}"
+#define MODEL_IDENTIFIER multiplicator_system
+#define MODEL_GUID "{multiplicator-a5cf1fbd-89ca-495b-b5ff-ec53a96c6173}"
 
 // END MODEL STUFF
 
@@ -106,14 +106,18 @@ typedef struct {
     int isDirtyValues; // !0 is true
 
     // Model variables:
-    bool HIGH;
-    bool LOW;
-    bool OPEN;
-    bool CLOSE;
-    bool reset;
-    double threshold;
-    
-	  // Add other model variables 
+    uint8_t Input_1;
+    uint8_t Input_2;
+    uint8_t Input_3;
+    uint8_t Input_4;
+    uint8_t Output_1;
+    uint8_t Output_2;
+    uint8_t Output_3;
+    uint8_t Output_4;
+
+    bool Reset;
+    bool Input_ready;
+    bool Output_ready;
 
     CSTATES status;
 
@@ -123,7 +127,7 @@ typedef struct {
 //Personal functions
 //Suggestion: add here utility functions (i.e., conversion, bit masking, etc.)
 
-void controller_implementation( ModelInstance * comp );
+void multiplicator_implementation( ModelInstance * comp );
 
 // ---------------------------------------------------------------------------
 // Functions from the fmuTemplace. but are them really need?
