@@ -37,59 +37,39 @@ extern "C" {
         comp->Output_ready = b(2);
 
         // Model implementation
-        /*switch( comp->status )
-        {
-            case ACTIVE:
-                comp->threshold = 0.7;
-                comp->OPEN = false;
-                comp->CLOSE = false;
-                if( comp->LOW )
-                    comp->status = INCREASE;
+        switch(comp->status) {
+            case ST_0:
+                while(false);
                 break;
-            case INCREASE:
-
-                comp->reset=true;
-                
-                //Use the fixed-point multiplicator here
-
-                comp->OPEN = true;
-                comp->CLOSE = false;
-                comp->status = NOTHING;
+            case ST_1:
+                while(false);
                 break;
-            case NOTHING:
-                comp->threshold = comp->threshold;
-                comp->OPEN = false;
-                comp->CLOSE = false;
-                if( comp->HIGH )
-                    comp->status = DECREASE;
-                else if( comp->LOW )
-                    comp->status = INCREASE;
+            case ST_2:
+                while(false);
                 break;
-            case DECREASE:
-
-                comp->reset=true;
-                
-                //Use the fixed-point multiplicator here
-
-                comp->OPEN = false;
-                comp->CLOSE = true;
-                comp->status = NOTHING;
+            case ST_3:
+                while(false);
                 break;
-            default:
+            case ST_4:
+                while(false);
+                break;
+            case ST_5:
+                while(false);
                 break;
         }
 
+        integer(0) = comp->Input_1;
+        integer(1) = comp->Input_2;
+        integer(2) = comp->Input_3;
+        integer(3) = comp->Input_4;
+        integer(4) = comp->Output_1;
+        integer(5) = comp->Output_2;
+        integer(6) = comp->Output_3;
+        integer(7) = comp->Output_4;
 
-
-
-        b(0) = comp->HIGH;
-        b(1) = comp->LOW;
-        b(2) = comp->OPEN;
-        b(3) = comp->CLOSE;
-        b(4) = comp->reset;
-        //Add something here
-        r(0) = comp->threshold;*/
-
+        b(0) = comp->Reset;
+        b(1) = comp->Input_ready;
+        b(2) = comp->Output_ready;
     }
 
 

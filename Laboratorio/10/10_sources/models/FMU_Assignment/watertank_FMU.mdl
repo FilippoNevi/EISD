@@ -7,7 +7,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "13.4"
+    ComputedModelVersion    "13.8"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -70,50 +70,61 @@ Model {
       }
       Array {
 	Type			"Simulink.EditorInfo"
-	Dimension		4
+	Dimension		5
 	Object {
 	  $ObjectID		  5
+	  IsActive		  [0]
+	  IsTabbed		  [1]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "7"
+	  Extents		  [1676.0, 822.0]
+	  ZoomFactor		  [1.75]
+	  Offset		  [-303.01476934523737, -177.29047619047611]
+	  SceneRectInView	  [-303.01476934523737, -177.29047619047611, 957.71428571428567, 469.71428571428572]
+	}
+	Object {
+	  $ObjectID		  6
 	  IsActive		  [1]
 	  IsTabbed		  [1]
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
 	  Extents		  [1676.0, 822.0]
-	  ZoomFactor		  [1.0530051213233447]
-	  Offset		  [-1290.2251210879847, 429.70471803365422]
-	  SceneRectInView	  [-1290.2251210879847, 429.70471803365422, 1591.6351839711074, 780.62298402401575]
-	}
-	Object {
-	  $ObjectID		  6
-	  IsActive		  [0]
-	  IsTabbed		  [0]
-	  ViewObjType		  "StateflowChart"
-	  LoadSaveID		  "21"
-	  Extents		  [1676.0, 758.0]
-	  ZoomFactor		  [0.6000600060006]
-	  Offset		  [8.54600000000005, 20.813999999999965]
-	  SceneRectInView	  [8.54600000000005, 20.813999999999965, 2793.054, 1263.207]
+	  ZoomFactor		  [1.0478810088108221]
+	  Offset		  [-1293.1623428287162, 429.70471803365416]
+	  SceneRectInView	  [-1293.1623428287162, 429.70471803365416, 1599.4182411054408, 784.44021132975672]
 	}
 	Object {
 	  $ObjectID		  7
 	  IsActive		  [0]
 	  IsTabbed		  [0]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "36"
-	  Extents		  [1676.0, 758.0]
-	  ZoomFactor		  [1.3021234567901234]
-	  Offset		  [1.1389563106796459, -99.344280946601941]
-	  SceneRectInView	  [1.1389563106796459, -99.344280946601941, 1287.1283373786407, 582.12606189320388]
+	  ViewObjType		  "StateflowChart"
+	  LoadSaveID		  "21"
+	  Extents		  [1676.0, 822.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [97.242166666666662, 38.308499999999924]
+	  SceneRectInView	  [97.242166666666662, 38.308499999999924, 1676.0, 822.0]
 	}
 	Object {
 	  $ObjectID		  8
 	  IsActive		  [0]
 	  IsTabbed		  [0]
 	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "7"
-	  Extents		  [1676.0, 758.0]
-	  ZoomFactor		  [1.25]
-	  Offset		  [-345.91953125, -211.7]
-	  SceneRectInView	  [-345.91953125, -211.7, 1340.8, 606.4]
+	  LoadSaveID		  "36"
+	  Extents		  [1676.0, 822.0]
+	  ZoomFactor		  [1.3021234567901234]
+	  Offset		  [1.1389563106796459, -123.91952366504853]
+	  SceneRectInView	  [1.1389563106796459, -123.91952366504853, 1287.1283373786407, 631.27654733009706]
+	}
+	Object {
+	  $ObjectID		  9
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "StateflowChart"
+	  LoadSaveID		  "11"
+	  Extents		  [1676.0, 822.0]
+	  ZoomFactor		  [0.79984003199360121]
+	  Offset		  [-66.105000000000018, -91.014999999999986]
+	  SceneRectInView	  [-66.105000000000018, -91.014999999999986, 2095.4190000000003, 1027.7055]
 	}
 	PropName		"EditorsInfo"
       }
@@ -121,7 +132,7 @@ Model {
 	Type			"Simulink.DockComponentInfo"
 	Dimension		2
 	Object {
-	  $ObjectID		  9
+	  $ObjectID		  10
 	  Type			  "Simulink:Editor:ReferencedFiles"
 	  ID			  "Referenced Files"
 	  Visible		  [0]
@@ -134,7 +145,7 @@ Model {
 	  Minimized		  "Unset"
 	}
 	Object {
-	  $ObjectID		  10
+	  $ObjectID		  11
 	  Type			  "GLUE2:PropertyInspector"
 	  ID			  "Property Inspector"
 	  Visible		  [0]
@@ -172,9 +183,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "filippo"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed Jun 30 16:47:14 2021"
-  RTWModifiedTimeStamp	  546972251
-  ModelVersionFormat	  "%<AutoIncrement:13.4>"
+  LastModifiedDate	  "Fri Jul 02 17:38:39 2021"
+  RTWModifiedTimeStamp	  547148318
+  ModelVersionFormat	  "%<AutoIncrement:13.8>"
   SampleTimeColors	  on
   SampleTimeAnnotations	  on
   LibraryLinkDisplay	  "disabled"
@@ -232,7 +243,7 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    11
+    $ObjectID		    12
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "watertank_FMU"
     overrideMode_	    [0.0]
@@ -279,7 +290,7 @@ Model {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      12
+      $ObjectID		      13
       Version		      "21.0.0"
       DisabledProps	      []
       Description	      ""
@@ -287,13 +298,13 @@ Model {
 	Type			"Handle"
 	Dimension		10
 	Simulink.SolverCC {
-	  $ObjectID		  13
+	  $ObjectID		  14
 	  Version		  "21.0.0"
 	  DisabledProps		  []
 	  Description		  ""
 	  Components		  []
 	  StartTime		  "0.0"
-	  StopTime		  "1000"
+	  StopTime		  "100"
 	  AbsTol		  "auto"
 	  AutoScaleAbsTol	  on
 	  FixedStep		  "auto"
@@ -330,7 +341,7 @@ Model {
 	  ODENIntegrationMethod	  "ode3"
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  14
+	  $ObjectID		  15
 	  Version		  "21.0.0"
 	  DisabledProps		  []
 	  Description		  ""
@@ -372,7 +383,7 @@ Model {
 	  LoggingIntervals	  "[-inf, inf]"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  15
+	  $ObjectID		  16
 	  Version		  "21.0.0"
 	  Array {
 	    Type		    "Cell"
@@ -447,7 +458,7 @@ Model {
 	  EfficientTunableParamExpr off
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  16
+	  $ObjectID		  17
 	  Version		  "21.0.0"
 	  Array {
 	    Type		    "Cell"
@@ -569,7 +580,7 @@ Model {
 	  VariantConditionMismatch "none"
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  17
+	  $ObjectID		  18
 	  Version		  "21.0.0"
 	  DisabledProps		  []
 	  Description		  ""
@@ -619,7 +630,7 @@ Model {
 	  HardwareBoardFeatureSet "EmbeddedCoderHSP"
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  18
+	  $ObjectID		  19
 	  Version		  "21.0.0"
 	  DisabledProps		  []
 	  Description		  ""
@@ -639,7 +650,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  19
+	  $ObjectID		  20
 	  Version		  "21.0.0"
 	  DisabledProps		  []
 	  Description		  ""
@@ -688,7 +699,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  20
+	  $ObjectID		  21
 	  Version		  "21.0.0"
 	  Array {
 	    Type		    "Cell"
@@ -795,7 +806,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      21
+	      $ObjectID		      22
 	      Version		      "21.0.0"
 	      Array {
 		Type			"Cell"
@@ -886,7 +897,7 @@ Model {
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      22
+	      $ObjectID		      23
 	      Version		      "21.0.0"
 	      Array {
 		Type			"Cell"
@@ -991,7 +1002,7 @@ Model {
 	  }
 	}
 	SlCovCC.ConfigComp {
-	  $ObjectID		  23
+	  $ObjectID		  24
 	  Version		  "21.0.0"
 	  DisabledProps		  []
 	  Description		  "Simulink Coverage Configuration Component"
@@ -1030,7 +1041,7 @@ Model {
 	  CovMcdcMode		  "Masking"
 	}
 	hdlcoderui.hdlcc {
-	  $ObjectID		  24
+	  $ObjectID		  25
 	  Version		  "21.0.0"
 	  DisabledProps		  []
 	  Description		  "HDL Coder custom configuration component"
@@ -1055,11 +1066,11 @@ Model {
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    12
+    $ObjectID		    13
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    25
+    $ObjectID		    26
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -1331,7 +1342,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "105"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "51"
+    SIDHighWatermark	    "52"
     SimulinkSubDomain	    "Simulink"
     Block {
       BlockType		      Delay
@@ -1340,6 +1351,18 @@ Model {
       Ports		      [1, 1]
       Position		      [-495, 698, -460, 732]
       ZOrder		      35
+      ForegroundColor	      "red"
+      InputPortMap	      "u0"
+      DelayLength	      "1"
+      InitialCondition	      "0"
+    }
+    Block {
+      BlockType		      Delay
+      Name		      "Delay1"
+      SID		      "52"
+      Ports		      [1, 1]
+      Position		      [-895, 928, -860, 962]
+      ZOrder		      39
       InputPortMap	      "u0"
       DelayLength	      "1"
       InitialCondition	      "0"
@@ -1353,6 +1376,8 @@ Model {
       ZOrder		      37
       HideAutomaticName	      off
       FMUName		      "multiplicator_system.fmu"
+      FMUDebugLogging	      on
+      FMUDebugLoggingRedirect "Display"
       FMUDebugLoggingFilter   "DataTag0"
       FMUMode		      "CoSimulation"
       MaskType		      "multiplicator_system [Co-Simulation, v2.0]"
@@ -1370,6 +1395,8 @@ Model {
       ZOrder		      34
       HideAutomaticName	      off
       FMUName		      "controller_system.fmu"
+      FMUDebugLogging	      on
+      FMUDebugLoggingRedirect "Display"
       FMUDebugLoggingFilter   "DataTag1"
       FMUMode		      "CoSimulation"
       MaskType		      "controller_system [Co-Simulation, v2.0]"
@@ -1412,7 +1439,7 @@ Model {
       SFBlockType	      "Chart"
       System {
 	Name			"Sensor"
-	Location		[1080, 286, 3000, 1274]
+	Location		[0, 28, 1920, 1080]
 	SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
 	Open			off
 	PortBlocksUseCompactNotation off
@@ -1566,10 +1593,10 @@ Model {
       "n')}},'UserDefinedChannelNames',{{}},'NumLines',2,'LineNames',{{'water level','Valve'}},'ShowContent',true,'Plac"
       "ement',1)},'TimeUnits','seconds','ShowTimeAxisLabel',false),extmgr.Configuration('Tools','Plot Navigation',true,"
       "'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measurements',true,'Measurements',str"
-      "uct('traceselector',struct('Line',1),'tcursors',struct('XCoordinates',[417.701863354037 1500],'YCoordinates',[Na"
-      "N NaN],'CursorChannels',[1 2],'WaveformCursors',true,'ShowHorizontal',false,'ShowVertical',true,'LockCursorSpaci"
-      "ng',false,'SnapToData',false,'SettingsPanelOpen',1,'MeasurementsPanelOpen',1)),'Version','2021a')),'Version','20"
-      "21a','Position',[326 123 1358 659])"
+      "uct('traceselector',struct('Line',1),'tcursors',struct('XCoordinates',[500.000000000002 1000],'YCoordinates',[7."
+      "95389791072877 NaN],'CursorChannels',[1 2],'WaveformCursors',true,'ShowHorizontal',false,'ShowVertical',true,'Lo"
+      "ckCursorSpacing',false,'SnapToData',false,'SettingsPanelOpen',1,'MeasurementsPanelOpen',1)),'Version','2021a')),"
+      "'Version','2021a','Position',[291 179 1366 660],'VisibleAtModelOpen','on')"
       NumInputPorts	      "2"
       Floating		      off
     }
@@ -1583,7 +1610,7 @@ Model {
       RequestExecContextInheritance off
       System {
 	Name			"Valve"
-	Location		[1920, 28, 3840, 1016]
+	Location		[0, 28, 1920, 1080]
 	SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
 	Open			off
 	PortBlocksUseCompactNotation off
@@ -1657,7 +1684,7 @@ Model {
 	  SFBlockType		  "Chart"
 	  System {
 	    Name		    "Valve\n"
-	    Location		    [0, 49, 1366, 768]
+	    Location		    [0, 28, 1920, 1080]
 	    SystemRect		    [0.000000, 0.000000, 0.000000, 0.000000]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
@@ -1869,7 +1896,7 @@ Model {
       Name		      "Water Tank"
       SID		      "7"
       Ports		      [1, 1]
-      Position		      [-135, 529, 5, 651]
+      Position		      [-145, 529, -5, 651]
       ZOrder		      7
       RequestExecContextInheritance off
       Port {
@@ -1878,9 +1905,9 @@ Model {
       }
       System {
 	Name			"Water Tank"
-	Location		[1080, 286, 3000, 1274]
+	Location		[0, 28, 1920, 1080]
 	SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
-	Open			off
+	Open			on
 	PortBlocksUseCompactNotation off
 	SetExecutionDomain	off
 	ExecutionDomainType	"Deduce"
@@ -1894,7 +1921,7 @@ Model {
 	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"125"
+	ZoomFactor		"175"
 	SimulinkSubDomain	"Simulink"
 	Block {
 	  BlockType		  Inport
@@ -1999,16 +2026,16 @@ Model {
       Labels		      [0, 0]
       SrcBlock		      "Water Tank"
       SrcPort		      1
-      Points		      [29, 0]
+      Points		      [39, 0]
       Branch {
-	ZOrder			252
-	Labels			[1, 1]
+	ZOrder			306
+	Labels			[-1, 0]
 	Points			[0, 240]
 	DstBlock		"Sensor"
 	DstPort			1
       }
       Branch {
-	ZOrder			169
+	ZOrder			304
 	Points			[0, -125]
 	DstBlock		"Time\nScope"
 	DstPort			1
@@ -2020,15 +2047,15 @@ Model {
       SrcPort		      1
       Points		      [263, 0; 0, -85]
       Branch {
-	ZOrder			253
-	Points			[-227, 0; 0, 85]
-	DstBlock		"Water Tank"
-	DstPort			1
-      }
-      Branch {
-	ZOrder			195
+	ZOrder			303
 	DstBlock		"Time\nScope"
 	DstPort			2
+      }
+      Branch {
+	ZOrder			253
+	Points			[-237, 0; 0, 85]
+	DstBlock		"Water Tank"
+	DstPort			1
       }
     }
     Line {
@@ -2079,14 +2106,6 @@ Model {
       DstPort		      5
     }
     Line {
-      ZOrder		      228
-      SrcBlock		      "FMU1"
-      SrcPort		      4
-      Points		      [58, 0; 0, 320]
-      DstBlock		      "FMU"
-      DstPort		      6
-    }
-    Line {
       ZOrder		      229
       SrcBlock		      "FMU1"
       SrcPort		      6
@@ -2131,7 +2150,6 @@ Model {
       }
       Branch {
 	ZOrder			275
-	Points			[0, 300]
 	DstBlock		"Scope"
 	DstPort			1
       }
@@ -2215,6 +2233,21 @@ Model {
       DstBlock		      "FMU"
       DstPort		      3
     }
+    Line {
+      ZOrder		      311
+      SrcBlock		      "FMU1"
+      SrcPort		      4
+      Points		      [0, 320]
+      DstBlock		      "Delay1"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      312
+      SrcBlock		      "Delay1"
+      SrcPort		      1
+      DstBlock		      "FMU"
+      DstPort		      6
+    }
   }
 }
 MatData {
@@ -2255,7 +2288,7 @@ Stateflow {
     machine		    1
     name		    "Valve/Valve\n"
     windowPosition	    [-8 -8 1936 1066]
-    viewLimits		    [-66.105 1350.428 -91.015 636.631]
+    viewLimits		    [-66.105 2029.314 -91.015 936.691]
     zoomFactor		    1.667
     transitionColor	    [0.3215686274509804 0.5450980392156862 0.7725490196078432]
     transitionLabelColor    [0.3215686274509804 0.5450980392156862 0.7725490196078432]
@@ -2264,6 +2297,8 @@ Stateflow {
     screen		    [1 1 3200 1200 1.25]
     treeNode		    [0 3 0 0]
     viewObj		    2
+    subviewS {
+    }
     ssIdHighWaterMark	    28
     decomposition	    CLUSTER_CHART
     updateMethod	    DISCRETE
@@ -2288,8 +2323,6 @@ Stateflow {
     ssIdNumber		    3
     type		    OR_STATE
     decomposition	    CLUSTER_STATE
-    eml {
-    }
   }
   state {
     id			    4
@@ -2303,8 +2336,6 @@ Stateflow {
     ssIdNumber		    1
     type		    OR_STATE
     decomposition	    CLUSTER_STATE
-    eml {
-    }
   }
   state {
     id			    5
@@ -2318,8 +2349,6 @@ Stateflow {
     ssIdNumber		    4
     type		    OR_STATE
     decomposition	    CLUSTER_STATE
-    eml {
-    }
   }
   data {
     id			    6
@@ -2632,8 +2661,8 @@ Stateflow {
     machine		    1
     name		    "Sensor"
     windowPosition	    [-1 25 1368 744]
-    viewLimits		    [8.546 2801.6 20.814 1284.021]
-    zoomFactor		    2.222
+    viewLimits		    [97.242 1773.242 38.308 860.308]
+    zoomFactor		    1.333
     transitionColor	    [0.3215686274509804 0.5450980392156862 0.7725490196078432]
     transitionLabelColor    [0.3215686274509804 0.5450980392156862 0.7725490196078432]
     junctionColor	    [0.7764705882352941 0.4980392156862745 0]
@@ -2641,7 +2670,6 @@ Stateflow {
     screen		    [1 1 3200 1200 1.25]
     treeNode		    [0 24 0 0]
     viewObj		    19
-    visible		    1
     subviewS {
     }
     ssIdHighWaterMark	    37
@@ -2668,8 +2696,6 @@ Stateflow {
     ssIdNumber		    2
     type		    OR_STATE
     decomposition	    CLUSTER_STATE
-    eml {
-    }
   }
   state {
     id			    21
@@ -2683,8 +2709,6 @@ Stateflow {
     ssIdNumber		    1
     type		    OR_STATE
     decomposition	    CLUSTER_STATE
-    eml {
-    }
   }
   state {
     id			    22
@@ -2698,8 +2722,6 @@ Stateflow {
     ssIdNumber		    3
     type		    OR_STATE
     decomposition	    CLUSTER_STATE
-    eml {
-    }
   }
   state {
     id			    23
@@ -2713,8 +2735,6 @@ Stateflow {
     ssIdNumber		    31
     type		    OR_STATE
     decomposition	    CLUSTER_STATE
-    eml {
-    }
   }
   state {
     id			    24
@@ -2728,8 +2748,6 @@ Stateflow {
     ssIdNumber		    33
     type		    OR_STATE
     decomposition	    CLUSTER_STATE
-    eml {
-    }
   }
   data {
     id			    25
