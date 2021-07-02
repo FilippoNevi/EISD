@@ -132,6 +132,11 @@ typedef struct {
 //Personal functions
 //Suggestion: add here utility functions (i.e., conversion, bit masking, etc.)
 
+uint16_t return_fixed_threshold(double number);
+double fixed_32_to_floating(uint8_t op1, uint8_t op2, uint8_t op3, uint8_t op4);
+uint8_t integer_part_mask(uint16_t number);
+uint8_t fractional_part_mask(uint16_t number);
+
 void controller_implementation( ModelInstance * comp );
 
 // ---------------------------------------------------------------------------

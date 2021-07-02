@@ -78,10 +78,12 @@ typedef enum {
 
 typedef enum
 {
-    ACTIVE,
-    INCREASE,
-    NOTHING,
-    DECREASE
+    ST_0,
+    ST_1,
+    ST_2,
+    ST_3,
+    ST_4,
+    ST_5
 } CSTATES;
 
 typedef struct {

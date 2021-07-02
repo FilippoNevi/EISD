@@ -20,6 +20,28 @@ extern "C" {
 
     //Implementation of the user-defined utility functions goes here
 
+    uint16_t return_fixed_threshold(double number) {
+        (uint16_t)(number * (1 << 8));
+    }
+
+    double fixed_32_to_floating(uint8_t op1, uint8_t op2, uint8_t op3, uint8_t op4) {
+        uint32_t number = 0;
+
+        number += op1 << 24;
+        number += op2 << 16;
+        number += op3 << 8;
+        number += op4;
+
+        return ((double)number / (double)(1 << 16));
+    }
+
+    uint8_t integer_part_mask_16(uint16_t number){
+        return (number & 65280) >> 8;
+    }
+
+    uint8_t fractional_part_mask_16(uint16_t number){
+        return number & 255;
+    }
 
     void controller_implementation( ModelInstance * comp )
     {
@@ -52,16 +74,24 @@ extern "C" {
                     comp->status = INCREASE;
                 break;
             case INCREASE:
+                comp->Input_1 = integer_part_mask_16(return_fixed_threshold(comp->threshold));
+                comp->Input_2 = fractional_part_mask_16(return_fixed_threshold(comp->threshold));
+                comp->Input_3 = (uint8_t)1;
+                comp->Input_4 = (uint8_t)26;
+                comp->Input_ready = true;
 
-                comp->reset=true;
-                
-                //Use the fixed-point multiplicator here
+                if(comp->Result_ready) {
+                    comp->Input_ready = false;
+                    comp->threshold = fixed_32_to_floating(comp->Result_1, comp->Result_2, comp->Result_3, comp->Result_4);
+                    comp->reset=true;
+                }
 
                 comp->OPEN = true;
                 comp->CLOSE = false;
                 comp->status = NOTHING;
                 break;
             case NOTHING:
+                comp->reset = false;
                 comp->threshold = comp->threshold;
                 comp->OPEN = false;
                 comp->CLOSE = false;
@@ -71,11 +101,17 @@ extern "C" {
                     comp->status = INCREASE;
                 break;
             case DECREASE:
+                comp->Input_1 = integer_part_mask_16(return_fixed_threshold(comp->threshold));
+                comp->Input_2 = fractional_part_mask_16(return_fixed_threshold(comp->threshold));
+                comp->Input_3 = (uint8_t)0;
+                comp->Input_4 = (uint8_t)179;
+                comp->Input_ready = true;
 
-                comp->reset=true;
-                
-                //Use the fixed-point multiplicator here
-
+                if(comp->Result_ready) {
+                    comp->Input_ready = false;
+                    comp->threshold = fixed_32_to_floating(comp->Result_1, comp->Result_2, comp->Result_3, comp->Result_4);
+                    comp->reset=true;
+                }
                 comp->OPEN = false;
                 comp->CLOSE = true;
                 comp->status = NOTHING;
