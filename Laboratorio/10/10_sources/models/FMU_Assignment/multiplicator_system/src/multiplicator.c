@@ -36,25 +36,27 @@ extern "C" {
         comp->Input_ready = b(1);
         comp->Output_ready = b(2);
 
+        
+
         // Model implementation
         switch(comp->status) {
             case ST_0:
-                while(false);
+                
                 break;
             case ST_1:
-                while(false);
+                
                 break;
             case ST_2:
-                while(false);
+                
                 break;
             case ST_3:
-                while(false);
+                
                 break;
             case ST_4:
-                while(false);
+                
                 break;
             case ST_5:
-                while(false);
+                
                 break;
         }
 

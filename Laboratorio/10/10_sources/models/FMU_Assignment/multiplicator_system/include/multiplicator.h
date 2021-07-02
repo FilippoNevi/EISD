@@ -108,6 +108,7 @@ typedef struct {
     int isDirtyValues; // !0 is true
 
     // Model variables:
+    
     uint8_t Input_1;
     uint8_t Input_2;
     uint8_t Input_3;
