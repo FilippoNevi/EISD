@@ -20,6 +20,28 @@ extern "C" {
 
     //Implementation of the user-defined utility functions goes here
 
+    uint32_t return_32_bit_number(uint8_t op1, uint8_t op2, uint8_t op3, uint8_t op4) {
+        uint32_t number = 0;
+        number += (op1 << 24);
+        number += (op2 << 16);
+        number += (op3 << 8);
+        number += op4;
+        return number;
+    }
+
+    uint16_t return_16_bit_number(uint8_t op1, uint8_t op2) {
+        uint16_t number = 0;
+        number += (op1 << 8);
+        number += op2;
+        return number;
+    }
+
+    void split_product(ModelInstance * comp) {
+        comp->Output_1 = (comp->product & 4278190080) >> 24;
+        comp->Output_1 = (comp->product & 16711680) >> 16;
+        comp->Output_3 = (comp->product & 65280) >> 8;
+        comp->Output_4 = (comp->product & 255);
+    }
 
     void multiplicator_implementation( ModelInstance * comp )
     {
@@ -36,27 +58,42 @@ extern "C" {
         comp->Input_ready = b(1);
         comp->Output_ready = b(2);
 
-        
-
         // Model implementation
         switch(comp->status) {
             case ST_0:
-                
+                if (comp->Input_ready == true)
+                    comp->status = ST_1;
+                else
+                    comp->status = ST_0;
                 break;
             case ST_1:
-                
+                comp->number_a = return_32_bit_number(0, 0, comp->Input_1, comp->Input_2);
+                comp->number_b = return_16_bit_number(comp->Input_3, comp->Input_4);
+                comp->counter = return_16_bit_number(comp->Input_1, comp->Input_2);
                 break;
             case ST_2:
-                
+                if (comp->Input_4 & 1)
+                    comp->status = ST_3;
+                else
+                    comp->status = ST_4;
                 break;
             case ST_3:
-                
+                comp->product += comp->number_a;
+                comp->status = ST_4;
                 break;
             case ST_4:
-                
+                comp->number_a = comp->number_a << 1;
+                comp->number_b = comp->number_b >> 1;
+                comp->counter = comp->counter >> 1;
+
+                if(comp->counter == 0)
+                    comp->status = ST_5;
+                else
+                    comp->status = ST_2;
                 break;
             case ST_5:
-                
+                split_product(comp);
+                comp->Output_ready = true;
                 break;
         }
 
@@ -224,13 +261,10 @@ extern "C" {
     // Set values for all variables that define a start value
     // Settings used unless changed by fmi2SetX before fmi2EnterInitializationMode
     void setStartValues(ModelInstance *comp) {
-
-
-        //TO BE IMPLEMENTED
-
-
-
-
+        comp->product = 0;
+        comp->number_a = 0;
+        comp->number_b = 0;
+        comp->counter = 0;
     }
 
 

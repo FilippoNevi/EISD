@@ -124,6 +124,11 @@ typedef struct {
 
     CSTATES status;
 
+    // Internal variables
+    uint32_t product;
+    uint32_t number_a;
+    uint16_t number_b;
+    uint16_t counter;
 
 } ModelInstance;
 
@@ -131,6 +136,15 @@ typedef struct {
 //Suggestion: add here utility functions (i.e., conversion, bit masking, etc.)
 
 void multiplicator_implementation( ModelInstance * comp );
+
+// Returns the combined 32-bit number, from four 8-bit variables
+uint32_t return_32_bit_number(uint8_t op1, uint8_t op2, uint8_t op3, uint8_t op4);
+
+// Returns the combined 16-bit number, from two 8-bit variables
+uint16_t return_16_bit_number(uint8_t op1, uint8_t op2);
+
+// Splits the product into four bytes
+void split_product(ModelInstance * comp);
 
 // ---------------------------------------------------------------------------
 // Functions from the fmuTemplace. but are them really need?
