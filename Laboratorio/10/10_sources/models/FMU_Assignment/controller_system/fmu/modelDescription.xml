@@ -70,19 +70,19 @@ numberOfEventIndicators="0">
   </ScalarVariable>
 
   <ScalarVariable name="Input_1" valueReference="4" description="integer" causality="output" variability="discrete" initial="approx">
-  <Integer start="2" />
+  <Integer start="0" />
   </ScalarVariable>
 
   <ScalarVariable name="Input_2" valueReference="5" description="integer" causality="output" variability="discrete" initial="approx">
-  <Integer start="128" />
+  <Integer start="0" />
   </ScalarVariable>
 
   <ScalarVariable name="Input_3" valueReference="6" description="integer" causality="output" variability="discrete" initial="approx">
-  <Integer start="2" />
+  <Integer start="0" />
   </ScalarVariable>
 
   <ScalarVariable name="Input_4" valueReference="7" description="integer" causality="output" variability="discrete" initial="approx">
-  <Integer start="128" />
+  <Integer start="0" />
   </ScalarVariable>
 
 </ModelVariables>

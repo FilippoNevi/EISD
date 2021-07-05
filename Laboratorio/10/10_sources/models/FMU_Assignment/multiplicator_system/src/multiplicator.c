@@ -58,6 +58,14 @@ extern "C" {
         comp->Input_ready = b(1);
         comp->Output_ready = b(2);
 
+        if(comp->Reset) {
+            comp->product = 0;
+            comp->number_a = 0;
+            comp->number_b = 0;
+            comp->counter = 0;
+            comp->status = ST_0;
+        }
+
         // Model implementation
         switch(comp->status) {
             case ST_0:
