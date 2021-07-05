@@ -78,6 +78,7 @@ extern "C" {
                 comp->number_a = return_32_bit_number(0, 0, comp->Input_1, comp->Input_2);
                 comp->number_b = return_16_bit_number(comp->Input_3, comp->Input_4);
                 comp->counter = return_16_bit_number(comp->Input_1, comp->Input_2);
+                comp->status = ST_2;
                 break;
             case ST_2:
                 if (comp->Input_4 & 1)
@@ -273,6 +274,7 @@ extern "C" {
         comp->number_a = 0;
         comp->number_b = 0;
         comp->counter = 0;
+        comp->status = ST_0;
     }
 
 
