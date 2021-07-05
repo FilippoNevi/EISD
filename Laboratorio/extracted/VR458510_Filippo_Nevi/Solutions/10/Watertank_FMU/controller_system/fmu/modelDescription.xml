@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fmiModelDescription
+fmiVersion="2.0"
+modelName="controller_system"
+guid="{controller-a5cf1fbd-89ca-495b-b5ff-ec53a96c6173}"
+description="Controller for the Water Tank system implemented within an FMU"
+generationTool="Manual"
+generationDateAndTime="None"
+variableNamingConvention="structured"
+numberOfEventIndicators="0">
+
+<CoSimulation modelIdentifier="controller_system" canHandleVariableCommunicationStepSize="false" />
+<LogCategories>
+    <Category name="logEvents" />
+    <Category name="logSingularLinearSystems" />
+    <Category name="logNonlinearSystems" />
+    <Category name="logDynamicStateSelection" />
+    <Category name="logStatusWarning" />
+    <Category name="logStatusDiscard" />
+    <Category name="logStatusError" />
+    <Category name="logStatusFatal" />
+    <Category name="logStatusPending" />
+    <Category name="logAll" />
+    <Category name="logFmi2Call" />
+</LogCategories>
+<ModelVariables>
+	<ScalarVariable name="HIGH" valueReference="0" description="bool" causality="input" variability="discrete" initial="approx">
+	<Boolean  start ="false" />
+	</ScalarVariable>
+	<ScalarVariable name="LOW" valueReference="1" description="bool" causality="input" variability="discrete" initial="approx">
+	<Boolean  start ="false" />
+	</ScalarVariable>
+	<ScalarVariable name="OPEN" valueReference="2" description="bool" causality="output" variability="discrete" initial="approx">
+	<Boolean  start ="false" />
+	</ScalarVariable>
+	<ScalarVariable name="CLOSE" valueReference="3" description="bool" causality="output" variability="discrete" initial="approx">
+	<Boolean  start ="false" />
+	</ScalarVariable>
+  <ScalarVariable name="reset" valueReference="4" description="bool" causality="output" variability="discrete" initial="approx">
+  <Boolean  start ="false" />
+  </ScalarVariable>
+  <!-- Add other bool variables here -->
+  <ScalarVariable name="Input_ready" valueReference="5" description="bool" causality="output" variability="discrete" initial="approx">
+  <Boolean start="false" />
+  </ScalarVariable>
+
+  <ScalarVariable name="Result_ready" valueReference="6" description="bool" causality="input" variability="discrete" initial="approx">
+  <Boolean start="false" />
+  </ScalarVariable>
+
+	<ScalarVariable name="threshold" valueReference="0" description="double" causality="output" variability="discrete" initial="approx">
+	<Real  start ="0.0" />
+	</ScalarVariable>
+  <!-- Add other integer variables here -->
+  <ScalarVariable name="Result_1" valueReference="0" description="integer" causality="input" variability="discrete" initial="approx">
+  <Integer start="0" />
+  </ScalarVariable>
+
+  <ScalarVariable name="Result_2" valueReference="1" description="integer" causality="input" variability="discrete" initial="approx">
+  <Integer start="0" />
+  </ScalarVariable>
+
+  <ScalarVariable name="Result_3" valueReference="2" description="integer" causality="input" variability="discrete" initial="approx">
+  <Integer start="0" />
+  </ScalarVariable>
+
+  <ScalarVariable name="Result_4" valueReference="3" description="integer" causality="input" variability="discrete" initial="approx">
+  <Integer start="0" />
+  </ScalarVariable>
+
+  <ScalarVariable name="Input_1" valueReference="4" description="integer" causality="output" variability="discrete" initial="approx">
+  <Integer start="0" />
+  </ScalarVariable>
+
+  <ScalarVariable name="Input_2" valueReference="5" description="integer" causality="output" variability="discrete" initial="approx">
+  <Integer start="0" />
+  </ScalarVariable>
+
+  <ScalarVariable name="Input_3" valueReference="6" description="integer" causality="output" variability="discrete" initial="approx">
+  <Integer start="0" />
+  </ScalarVariable>
+
+  <ScalarVariable name="Input_4" valueReference="7" description="integer" causality="output" variability="discrete" initial="approx">
+  <Integer start="0" />
+  </ScalarVariable>
+
+</ModelVariables>
+<ModelStructure>
+</ModelStructure>
+</fmiModelDescription>

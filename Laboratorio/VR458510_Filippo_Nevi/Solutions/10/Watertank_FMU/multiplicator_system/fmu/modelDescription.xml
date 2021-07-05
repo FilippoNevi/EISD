@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fmiModelDescription
+fmiVersion="2.0"
+modelName="multiplicator_system"
+guid="{multiplicator-a5cf1fbd-89ca-495b-b5ff-ec53a96c6173}"
+description="Multiplicator system implemented within an FMU"
+generationTool="Manual"
+generationDateAndTime="None"
+variableNamingConvention="structured"
+numberOfEventIndicators="0">
+
+<CoSimulation modelIdentifier="multiplicator_system" canHandleVariableCommunicationStepSize="false" />
+<LogCategories>
+    <Category name="logEvents" />
+    <Category name="logSingularLinearSystems" />
+    <Category name="logNonlinearSystems" />
+    <Category name="logDynamicStateSelection" />
+    <Category name="logStatusWarning" />
+    <Category name="logStatusDiscard" />
+    <Category name="logStatusError" />
+    <Category name="logStatusFatal" />
+    <Category name="logStatusPending" />
+    <Category name="logAll" />
+    <Category name="logFmi2Call" />
+</LogCategories>
+<ModelVariables>
+    <!-- Integer variables -->
+    <ScalarVariable name="Input_1" valueReference="0" description="integer" causality="input" variability="discrete" initial="approx">
+    <Integer start="0" />
+    </ScalarVariable>
+
+    <ScalarVariable name="Input_2" valueReference="1" description="integer" causality="input" variability="discrete" initial="approx">
+    <Integer start="0" />
+    </ScalarVariable>
+
+    <ScalarVariable name="Input_3" valueReference="2" description="integer" causality="input" variability="discrete" initial="approx">
+    <Integer start="0" />
+    </ScalarVariable>
+
+    <ScalarVariable name="Input_4" valueReference="3" description="integer" causality="input" variability="discrete" initial="approx">
+    <Integer start="0" />
+    </ScalarVariable>
+
+    <ScalarVariable name="Output_1" valueReference="4" description="integer" causality="output" variability="discrete" initial="approx">
+    <Integer start="0" />
+    </ScalarVariable>
+
+    <ScalarVariable name="Output_2" valueReference="5" description="integer" causality="output" variability="discrete" initial="approx">
+    <Integer start="0" />
+    </ScalarVariable>
+
+    <ScalarVariable name="Output_3" valueReference="6" description="integer" causality="output" variability="discrete" initial="approx">
+    <Integer start="0" />
+    </ScalarVariable>
+
+    <ScalarVariable name="Output_4" valueReference="7" description="integer" causality="output" variability="discrete" initial="approx">
+    <Integer start="0" />
+    </ScalarVariable>
+
+    <!-- Boolean variables -->
+    <ScalarVariable name="Reset" valueReference="0" description="bool" causality="input" variability="discrete" initial="approx">
+    <Boolean  start="false" />
+    </ScalarVariable>
+
+    <ScalarVariable name="Input_ready" valueReference="1" description="bool" causality="input" variability="discrete" initial="approx">
+    <Boolean start="false" />
+    </ScalarVariable>
+
+    <ScalarVariable name="Output_ready" valueReference="2" description="bool" causality="output" variability="discrete" initial="approx">
+    <Boolean start="false" />
+    </ScalarVariable>
+
+</ModelVariables>
+<ModelStructure>
+</ModelStructure>
+</fmiModelDescription>

@@ -1,0 +1,9 @@
+* Temporary input file
+
+.model diode_circuit_tb macro lang=veriloga
+ytop diode_circuit_tb
+
+.tran 1u 10sec
+//.OPTION HMAX=1u
+//.OPTION HMIN=1u
+//.ac dec 1k 1 10G

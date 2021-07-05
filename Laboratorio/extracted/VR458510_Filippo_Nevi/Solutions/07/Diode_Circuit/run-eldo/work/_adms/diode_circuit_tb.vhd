@@ -1,0 +1,9 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+LIBRARY STD;
+USE STD.ALL;
+
+ENTITY diode_circuit_tb IS
+END ENTITY diode_circuit_tb;
+

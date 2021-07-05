@@ -1,0 +1,579 @@
+# vasim -c -cmd module.cir -do module.do
+# ** Note: (vasim-3800) Running Questa ADMS 17.1 patch1 Fri Apr  7 09:46:03 GMT 2017
+# +   on 02c1de605c70 Linux x86_64(5.4.0-65-generic) #73~18.04.1-Ubuntu SMP Tue Jan 19 09:02:24 UTC 2021
+# ELDO 17.1 patch1 (64 bits) Thu Apr  6 15:28:32 GMT 2017
+# System Information:
+# *** User  : unknown
+# *** OS    : \S [VCO = aol]
+# *** CPU   :
+#     Intel(R) Core(TM) i5-4590 CPU @ 3.30GHz
+#     Number of physical processors     : 1
+#     Hyper-Threading Technology        : disabled
+#     Number of cpu cores               : 4
+#     Number of logical processors      : 4
+# *** Freq  : 2108.692MHz
+# *** Cache : 6144 KB
+# *** MEM   : 16334864 kB
+# *** Date  : Fri Feb 26 22:15:18 2021
+# Copyright 2000 Mentor Graphics Corporation
+# All Rights Reserved
+# THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY
+# INFORMATION WHICH ARE THE PROPERTY OF MENTOR
+# GRAPHICS CORPORATION OR ITS LICENSORS AND IS
+# SUBJECT TO LICENSE TERMS.
+#  ---------------
+# | Load starting |
+#  ---------------
+# Loading "/opt/mentor/questasim/libs/std.standard"
+# ModelSim for Questa-64 Version 10.6_1 2017.01
+#
+# Reading pref.tcl
+# 10.6_1
+# Loading "/opt/mentor/questasim/libs/ieee.math_real"
+# Loading "/opt/mentor/questasim/libs/ieee.fundamental_constants"
+# Loading "/opt/mentor/questasim/libs/ieee.electrical_systems"
+# Loading "/opt/mentor/questasim/libs/ieee.std_logic_1164"
+# Loading "/opt/mentor/questasim/libs/MGC_AMS.wreal_pkg"
+# Loading "/opt/mentor/questasim/libs/ieee.numeric_bit"
+# Loading "/opt/mentor/questasim/libs/ieee.upf"
+# Loading "/home/user/EISD/Laboratorio/07/solutions/run-eldo/work.diode_circuit_tb"
+# Loading "/home/user/EISD/Laboratorio/07/solutions/run-eldo/work.vsrc"
+# Loading "/home/user/EISD/Laboratorio/07/solutions/run-eldo/work.circuit"
+# Start time: 22:15:19 on Feb 26,2021
+# Start time: 22:15:19 on Feb 26,2021
+# //  Questa Sim-64
+# //  Version 10.6_1 linux_x86_64 Jan 30 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading /home/user/EISD/Laboratorio/07/solutions/run-eldo/work.vloga_dig_submod_diode_circuit_tb
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading /opt/mentor/questasim/libs/MS/OS/aol/libVLA2D_64.so
+# End time: 22:15:20 on Feb 26,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+#  ----------------------------
+# | Analog Data pre-processing |
+#  ----------------------------
+# Analog data pre-processing done
+# -----------| Summary on Analog Data |-----------
+# Analog kernel and ELDO devices peak memory usage (MB): 68
+# Analog kernel and ELDO devices virtual memory usage (MB): 588
+# 3 devices
+# 2 nodes
+# 0 input signals
+# ** Note: Extra devices and nodes might be created during simulation (access resistors, internal nodes...).
+# ** Note: Extra Memory might be allocated during simulation.
+# ----------- Summary done -----------
+#     Parsing  cpu Time 0h 0mn 0s 140ms 
+# Load done
+# do module.do
+#  -----------------------------
+# | Quiescent Point computation |
+#  -----------------------------
+# Analog DC computation starting
+# simTime: 0.000000
+# Analog DC computation done
+# Digital computation at time 0 us starting
+# state 0
+# Digital computation at time 0 us done
+# Quiescent point done
+#  -----------------------------
+# | Transient analysis starting |
+#  -----------------------------
+# Eldo analog kernel simulation effective options:
+#   VNTOL  = 1.000000e-06
+#   RELTOL = 6.111111e-04
+#   HMIN   = 1.000000e-03 ns
+#   HMAX will be set later during simulation and may vary
+#   EPS    = 5.000000e-04
+# Starting analog time is 0.000000 ns
+# Simulation time for "run -all" is 1.000000E+10 ns
+# simTime: 0.000000
+# simTime: 0.000000
+# simTime: 0.000000
+# simTime: 0.000000
+# simTime: 0.000000
+# simTime: 0.000000
+# simTime: 0.000000
+# simTime: 0.000000
+# simTime: 0.000000
+# simTime: 0.000000
+# simTime: 0.000000
+# simTime: 0.000000
+# simTime: 0.000000
+# simTime: 0.000000
+# simTime: 0.000000
+# simTime: 0.000000
+# simTime: 0.000001
+# simTime: 0.000001
+# simTime: 0.000003
+# simTime: 0.000005
+# simTime: 0.000010
+# simTime: 0.000021
+# simTime: 0.000042
+# simTime: 0.000084
+# simTime: 0.000168
+# simTime: 0.000336
+# state 1
+# simTime: 0.000671
+# simTime: 0.001342
+# state 2
+# simTime: 0.002684
+# simTime: 0.005369
+# simTime: 0.010737
+# simTime: 0.019327
+# simTime: 0.029720
+# simTime: 0.039689
+# simTime: 0.059627
+# simTime: 0.090635
+# simTime: 0.122376
+# simTime: 0.150308
+# simTime: 0.174120
+# simTime: 0.193172
+# simTime: 0.213269
+# simTime: 0.237585
+# simTime: 0.262348
+# simTime: 0.275231
+# simTime: 0.300998
+# simTime: 0.344656
+# simTime: 0.376511
+# simTime: 0.401935
+# simTime: 0.424698
+# simTime: 0.444073
+# simTime: 0.464603
+# simTime: 0.489118
+# simTime: 0.520509
+# simTime: 0.530494
+# simTime: 0.538461
+# simTime: 0.554394
+# simTime: 0.586262
+# simTime: 0.619290
+# simTime: 0.646919
+# simTime: 0.671191
+# simTime: 0.690289
+# simTime: 0.710044
+# simTime: 0.733734
+# simTime: 0.745495
+# simTime: 0.754012
+# simTime: 0.771046
+# simTime: 0.805114
+# simTime: 0.846967
+# simTime: 0.877071
+# simTime: 0.903125
+# simTime: 0.926010
+# simTime: 0.945333
+# simTime: 0.965933
+# simTime: 0.990728
+# state 1000
+# simTime: 1.022805
+# simTime: 1.034037
+# simTime: 1.042798
+# simTime: 1.060320
+# simTime: 1.095363
+# simTime: 1.127263
+# simTime: 1.153603
+# simTime: 1.176108
+# simTime: 1.195299
+# simTime: 1.215970
+# simTime: 1.240834
+# simTime: 1.263762
+# simTime: 1.278402
+# simTime: 1.307682
+# simTime: 1.349122
+# simTime: 1.379733
+# simTime: 1.405362
+# simTime: 1.427316
+# simTime: 1.446598
+# simTime: 1.467570
+# simTime: 1.492763
+# simTime: 1.525623
+# simTime: 1.537774
+# simTime: 1.547408
+# simTime: 1.566677
+# simTime: 1.605214
+# simTime: 1.635964
+# simTime: 1.660764
+# simTime: 1.680634
+# simTime: 1.699809
+# simTime: 1.721726
+# simTime: 1.747995
+# simTime: 1.764895
+# simTime: 1.784620
+# simTime: 1.824069
+# simTime: 1.860625
+# simTime: 1.888208
+# simTime: 1.913882
+# simTime: 1.933278
+# simTime: 1.952291
+# simTime: 1.974625
+# simTime: 2.001716
+# simTime: 2.019671
+# simTime: 2.032170
+# simTime: 2.041493
+# simTime: 2.060140
+# simTime: 2.091568
+# simTime: 2.123545
+# simTime: 2.151131
+# simTime: 2.174612
+# simTime: 2.193686
+# simTime: 2.213920
+# simTime: 2.238368
+# simTime: 2.263341
+# simTime: 2.276777
+# simTime: 2.303648
+# simTime: 2.346516
+# simTime: 2.377900
+# simTime: 2.403364
+# simTime: 2.425772
+# simTime: 2.445113
+# simTime: 2.465828
+# simTime: 2.490615
+# simTime: 2.522583
+# simTime: 2.533956
+# simTime: 2.542739
+# simTime: 2.560306
+# simTime: 2.595440
+# simTime: 2.627328
+# simTime: 2.653648
+# simTime: 2.676136
+# simTime: 2.695329
+# simTime: 2.716008
+# simTime: 2.740879
+# simTime: 2.763703
+# simTime: 2.778345
+# simTime: 2.807631
+# simTime: 2.849078
+# simTime: 2.879693
+# simTime: 2.905326
+# simTime: 2.927293
+# simTime: 2.946575
+# simTime: 2.967541
+# simTime: 2.992727
+# simTime: 3.025573
+# simTime: 3.037749
+# simTime: 3.047384
+# simTime: 3.066653
+# simTime: 3.105192
+# simTime: 3.135944
+# simTime: 3.160747
+# simTime: 3.180623
+# simTime: 3.199798
+# simTime: 3.221712
+# simTime: 3.247977
+# simTime: 3.264888
+# simTime: 3.284593
+# simTime: 3.324004
+# simTime: 3.360575
+# simTime: 3.388169
+# simTime: 3.413847
+# simTime: 3.433257
+# simTime: 3.452271
+# simTime: 3.474599
+# simTime: 3.501681
+# simTime: 3.519648
+# simTime: 3.532188
+# simTime: 3.541519
+# simTime: 3.560182
+# simTime: 3.591590
+# simTime: 3.623561
+# simTime: 3.651151
+# simTime: 3.674630
+# simTime: 3.693703
+# simTime: 3.713938
+# simTime: 3.738391
+# simTime: 3.763370
+# simTime: 3.776823
+# simTime: 3.803729
+# simTime: 3.846573
+# simTime: 3.877943
+# simTime: 3.903408
+# simTime: 3.925805
+# simTime: 3.945144
+# simTime: 3.965865
+# simTime: 3.990661
+# simTime: 4.022647
+# simTime: 4.033974
+# simTime: 4.042749
+# simTime: 4.060300
+# simTime: 4.095401
+# simTime: 4.127295
+# simTime: 4.153623
+# simTime: 4.176120
+# simTime: 4.195312
+# simTime: 4.215987
+# simTime: 4.240854
+# simTime: 4.263736
+# simTime: 4.278377
+# simTime: 4.307659
+# simTime: 4.349102
+# simTime: 4.379715
+# simTime: 4.405346
+# simTime: 4.427306
+# simTime: 4.446587
+# simTime: 4.467557
+# simTime: 4.492747
+# simTime: 4.525601
+# simTime: 4.537763
+# simTime: 4.547397
+# simTime: 4.566666
+# simTime: 4.605204
+# simTime: 4.635955
+# simTime: 4.660756
+# simTime: 4.680629
+# simTime: 4.699804
+# simTime: 4.721720
+# simTime: 4.747987
+# simTime: 4.764892
+# simTime: 4.784608
+# simTime: 4.824039
+# simTime: 4.860602
+# simTime: 4.888190
+# simTime: 4.913866
+# simTime: 4.933268
+# simTime: 4.952282
+# simTime: 4.974613
+# simTime: 5.001700
+# simTime: 5.019661
+# simTime: 5.032178
+# simTime: 5.041505
+# simTime: 5.060159
+# simTime: 5.091578
+# simTime: 5.123553
+# simTime: 5.151140
+# simTime: 5.174620
+# simTime: 5.193694
+# simTime: 5.213928
+# simTime: 5.238378
+# simTime: 5.263354
+# simTime: 5.276798
+# simTime: 5.303685
+# simTime: 5.346542
+# simTime: 5.377920
+# simTime: 5.403384
+# simTime: 5.425787
+# simTime: 5.445127
+# simTime: 5.465845
+# simTime: 5.490636
+# simTime: 5.522611
+# simTime: 5.533964
+# simTime: 5.542744
+# simTime: 5.560303
+# simTime: 5.595422
+# simTime: 5.627313
+# simTime: 5.653637
+# simTime: 5.676129
+# simTime: 5.695322
+# simTime: 5.715999
+# simTime: 5.740868
+# simTime: 5.763718
+# simTime: 5.778360
+# simTime: 5.807644
+# simTime: 5.849089
+# simTime: 5.879703
+# simTime: 5.905335
+# simTime: 5.927299
+# simTime: 5.946580
+# simTime: 5.967548
+# simTime: 5.992736
+# simTime: 6.025586
+# simTime: 6.037755
+# simTime: 6.047390
+# simTime: 6.066659
+# simTime: 6.105197
+# simTime: 6.135949
+# simTime: 6.160751
+# simTime: 6.180626
+# simTime: 6.199801
+# simTime: 6.221715
+# simTime: 6.247982
+# simTime: 6.264890
+# simTime: 6.284600
+# simTime: 6.324020
+# simTime: 6.360587
+# simTime: 6.388179
+# simTime: 6.413856
+# simTime: 6.433262
+# simTime: 6.452276
+# simTime: 6.474605
+# simTime: 6.501690
+# simTime: 6.519654
+# simTime: 6.532183
+# simTime: 6.541513
+# simTime: 6.560172
+# simTime: 6.591584
+# simTime: 6.623557
+# simTime: 6.651146
+# simTime: 6.674625
+# simTime: 6.693699
+# simTime: 6.713934
+# simTime: 6.738385
+# simTime: 6.763363
+# simTime: 6.776812
+# simTime: 6.803709
+# simTime: 6.846559
+# simTime: 6.877932
+# simTime: 6.903397
+# simTime: 6.925796
+# simTime: 6.945136
+# simTime: 6.965856
+# simTime: 6.990649
+# simTime: 7.022631
+# simTime: 7.033969
+# simTime: 7.042747
+# simTime: 7.060301
+# simTime: 7.095411
+# simTime: 7.127303
+# simTime: 7.153629
+# simTime: 7.176124
+# simTime: 7.195316
+# simTime: 7.215993
+# simTime: 7.240860
+# simTime: 7.263727
+# simTime: 7.278369
+# simTime: 7.307652
+# simTime: 7.349096
+# simTime: 7.379709
+# simTime: 7.405341
+# simTime: 7.427303
+# simTime: 7.446584
+# simTime: 7.467553
+# simTime: 7.492742
+# simTime: 7.525594
+# simTime: 7.537759
+# simTime: 7.547394
+# simTime: 7.566663
+# simTime: 7.605201
+# simTime: 7.635952
+# simTime: 7.660754
+# simTime: 7.680628
+# simTime: 7.699802
+# simTime: 7.721718
+# simTime: 7.747985
+# simTime: 7.764891
+# simTime: 7.784604
+# simTime: 7.824030
+# simTime: 7.860596
+# simTime: 7.888185
+# simTime: 7.913862
+# simTime: 7.933266
+# simTime: 7.952279
+# simTime: 7.974609
+# simTime: 8.001695
+# simTime: 8.019657
+# simTime: 8.032180
+# simTime: 8.041509
+# simTime: 8.060165
+# simTime: 8.091581
+# simTime: 8.123555
+# simTime: 8.151143
+# simTime: 8.174622
+# simTime: 8.193696
+# simTime: 8.213930
+# simTime: 8.238381
+# simTime: 8.263358
+# simTime: 8.276804
+# simTime: 8.303696
+# simTime: 8.346550
+# simTime: 8.377925
+# simTime: 8.403390
+# simTime: 8.425791
+# simTime: 8.445131
+# simTime: 8.465850
+# simTime: 8.490642
+# simTime: 8.522620
+# simTime: 8.533966
+# simTime: 8.542745
+# simTime: 8.560302
+# simTime: 8.595417
+# simTime: 8.627309
+# simTime: 8.653633
+# simTime: 8.676127
+# simTime: 8.695319
+# simTime: 8.715996
+# simTime: 8.740864
+# simTime: 8.763722
+# simTime: 8.778364
+# simTime: 8.807648
+# simTime: 8.849092
+# simTime: 8.879706
+# simTime: 8.905338
+# simTime: 8.927300
+# simTime: 8.946582
+# simTime: 8.967551
+# simTime: 8.992739
+# simTime: 9.025589
+# simTime: 9.037757
+# simTime: 9.047392
+# simTime: 9.066661
+# simTime: 9.105199
+# simTime: 9.135951
+# simTime: 9.160752
+# simTime: 9.180627
+# simTime: 9.199801
+# simTime: 9.221716
+# simTime: 9.247983
+# simTime: 9.264890
+# simTime: 9.284602
+# simTime: 9.324025
+# simTime: 9.360591
+# simTime: 9.388181
+# simTime: 9.413859
+# simTime: 9.433264
+# simTime: 9.452278
+# simTime: 9.474607
+# simTime: 9.501692
+# simTime: 9.519655
+# simTime: 9.532182
+# simTime: 9.541511
+# simTime: 9.560169
+# simTime: 9.591583
+# simTime: 9.623556
+# simTime: 9.651144
+# simTime: 9.674624
+# simTime: 9.693698
+# simTime: 9.713932
+# simTime: 9.738383
+# simTime: 9.763361
+# simTime: 9.776808
+# simTime: 9.803703
+# simTime: 9.846555
+# simTime: 9.877929
+# simTime: 9.903394
+# simTime: 9.925794
+# simTime: 9.945134
+# simTime: 9.965853
+# simTime: 9.990646
+# simTime: 10.000000
+# ................................................
+# Simulation progress                : 100.00% (t = 10 sec)
+# Elapsed CPU time                   :  0h  0mn  0s 380    ( 0h  0mn  0s 380)
+# Elapsed time                       :  0h  0mn  2s   0    ( 0h  0mn  2s   0)
+# CPU usage                          :  19%                ( 19%)
+q
+
+# Transient analysis done
+#    Global cpu Time 0h 0mn 0s 380ms 
+#    Global Elapsed Time 0h 0mn 3s 
+# ------------| Simulation Information |-------------
+# Peak memory usage (MB): 72
+# Virtual memory usage (MB): 588
+# 3 devices
+# 2 nodes
+# 0 MOS or BIP model calls
+# 453 steps computed
+# ----------- Simulation Information done -----------
+# --- Simulation stopped at time 10 sec
+# Newton iteration            :  2.818985
+# Total of transactions       :  30084
+# Total of events             :  22035

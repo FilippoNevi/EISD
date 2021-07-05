@@ -1,0 +1,27 @@
+`include "disciplines.vams"
+`include "constants.vams"
+`timescale 1us / 1us
+
+module motor(shaft, p, n);
+
+    // PARAMETERS -----------------------
+    parameter real km = 4.5;  // motor constant (V-s/rad)
+    parameter real kf = 6.2;  // flux constant (N-m/A) = Kt
+    parameter real j = 1.2;   // inertia of shaft (N-m-s2/rad) 0.004
+    parameter real d = 0.1;   // drag (friction) (N-m-s/rad) 0.1 -> to 1.5
+    parameter real r = 5.0;   // motor winding resistance (Ohms)
+    parameter real l = 0.02;  // motor winding inductance (H)
+
+    // PORTS ---------------------------
+    inout shaft, p, n;
+    // NODES ---------------------------
+    electrical p, n;
+    rotational_omega shaft;
+    
+    
+    // BEHAVIOR ------------------------
+    analog begin
+        V(p,n) <+ km*Omega(shaft) + r*I(p,n) + l*ddt(I(p,n));
+        Tau(shaft) <+ kf*I(p,n) -d*Omega(shaft) - j*ddt(Omega(shaft));
+    end
+endmodule

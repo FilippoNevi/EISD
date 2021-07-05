@@ -1,0 +1,6 @@
+[VERILOG-AMS Module]
+NAME = diode_circuit_tb 
+SOURCE = /home/user/EISD/Laboratorio/07/solutions/testbenches/diode_circuit_tb.vams 
+LINE = 4
+[Generics]
+[Ports]

@@ -1,0 +1,5 @@
+<interfaceDefinition version='1.2' language='verilog' kind='module' name='vloga_dig_submod_diode_circuit_tb'>
+	<portList>
+		<port name='\_adms_signal_#dummy\ ' direction='output' type='' kind=''> </port>
+	</portList>
+</interfaceDefinition>

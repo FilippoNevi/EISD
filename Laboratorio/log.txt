@@ -1,0 +1,6 @@
+INFO: Program started with parameters: (indir='/home/filippo/Git/EISD/Laboratorio/', output=None)
+INFO: Config file parsed successfully
+INFO: Archives extraction completed successfully
+INFO: Student archive data and status:
+	Name: Filippo, Surname: Nevi, id: VR458510 --> No issues found
+	 Assignments Delivered: ['08', '03', '05', '01', '04', '02', '07', '10']
